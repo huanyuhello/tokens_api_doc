@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#n8ntokens" class="md-skip">
+        <a href="#n8n4sapi" class="md-skip">
           跳转至
         </a>
       
@@ -6587,32 +6587,23 @@
 
 
 
-<h1 id="n8ntokens">n8n配置使用tokens教程<a class="headerlink" href="#n8ntokens" title="Permanent link">&para;</a></h1>
+<h1 id="n8n4sapi">n8n配置使用4sapi教程<a class="headerlink" href="#n8n4sapi" title="Permanent link">&para;</a></h1>
 <p><strong>一.添加账户凭证</strong>
 1.在n8n中点击overview，再点击Credential</p>
-<p><img alt="image.png" src="../../resource/631735.png" /></p>
 <p>2.在弹出的窗口中选择OpenAi</p>
-<p><img alt="image.png" src="../../resource/631737.png" /></p>
 <p>3.在弹出的界面中填入下面信息</p>
-<p><img alt="image.png" src="../../resource/631740.png" /></p>
 <p>4.点击保存后出现以下信息则成功</p>
-<p><img alt="image.png" src="../../resource/631741.png" /></p>
 <p><strong>二.n8n 工作流配置第三方 API</strong>
 通过http request添加：
 1.创建工作流</p>
-<p><img alt="image.png" src="../../resource/631744.png" /></p>
 <p>2.选择手动触发</p>
-<p><img alt="image.png" src="../../resource/631747.png" /></p>
 <p>3.添加下一个 n8n 工作流模块，选择 HTTP Request 节点</p>
-<p><img alt="image.png" src="../../resource/631748.png" /></p>
 <p>4.按照下图信息填写</p>
 <p>都使用json格式</p>
-<p><img alt="image.png" src="../../resource/631753.png" /></p>
 <p><code>{
 "Authorization": "Bearer  API Key",
 "Content-Type": "application/json"
 }</code></p>
-<p><img alt="image.png" src="../../resource/631754.png" /></p>
 <p><code>{
 "model": "gemini-2.5-pro-all",
 "messages": [
@@ -6623,14 +6614,11 @@
 <p>5.点击顶部的 Execute step 进行测试，如果右边 OUTPUT 正常输出内容了，说明 n8n 节点配置成功执行了</p>
 <p><strong>三.n8n 生图工作流节点配置</strong>
 1.添加 HTTP Request 节点来配置第三方 API</p>
-<p><img alt="image.png" src="../../resource/631765.png" /></p>
 <p>2.按照下图填入信息</p>
-<p><img alt="image.png" src="../../resource/631771.png" /></p>
 <p><code>{
 "Authorization": "sk-",
 "Content-Type": "application/json"
 }</code></p>
-<p><img alt="image.png" src="../../resource/631769.png" /></p>
 <p><code>{
     "model": "gpt-image-1",
     "prompt": "a white siamese cat",
@@ -6638,9 +6626,7 @@
     "size": "1024x1024"
 }</code></p>
 <p>3.点击右上角测试，输出成果就可以了</p>
-<p><img alt="image.png" src="../../resource/631772.png" /></p>
 <p>4.输出可以通过在线转码转成图片</p>
-<p><img alt="image.png" src="../../resource/631773.png" /></p>
 
 
 

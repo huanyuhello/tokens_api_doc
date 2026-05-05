@@ -6658,46 +6658,32 @@
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm install -g openclaw
 </code></pre></div>
 方式二：一键安装脚本</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl -fsSL https://openclaw.ai/install.sh | bash
 </code></pre></div>
 安装完成后执行引导（根据提示完成基础设置）
 <code>openclaw onboard --install-daemon</code></p>
 <p>-选择yes和快速启动</p>
-<p><img alt="image.png" src="../../resource/637074.png" /></p>
 <p>在模型提供商这里选择 Custom Provider</p>
-<p><img alt="image.png" src="../../resource/637075.png" /></p>
 <p>在4spi网站创建令牌，如果已有令牌要检查分组与你要调用的模型是否匹配</p>
-<p><img alt="image.png" src="../../resource/637082.png" /></p>
 <p>填写URL并粘贴刚才上面令牌的key
-<strong>注意</strong>：URL使用：<a href="http://47.102.134.41:3000">http://47.102.134.41:3000</a>  或者<a href="http://47.102.134.41:3000/v1">http://47.102.134.41:3000/v1</a></p>
-<p><img alt="image.png" src="../../resource/637085.png" /></p>
+<strong>注意</strong>：URL使用：<a href="https://4sapi.com">https://4sapi.com</a>  或者<a href="https://4sapi.com/v1">https://4sapi.com/v1</a></p>
 <p>兼容的端点选择要注意，除了claude选择第二个，其他一般选择Open AI兼容</p>
-<p><img alt="image.png" src="../../resource/637087.png" /></p>
 <p>模型名称在模型广场复制</p>
-<p><img alt="image.png" src="../../resource/637088.png" /></p>
 <p>粘贴模型名称</p>
-<p><img alt="image.png" src="../../resource/637089.png" /></p>
 <p>验证成功则为成功连通站点
 要是失败，在url后面加个  /v1</p>
-<p><img alt="image.png" src="../../resource/637090.png" /></p>
-<p>注意有个model alias 是可选，直接回车就可
-<img alt="image.png" src="../../resource/637091.png" /></p>
+<p>注意有个model alias 是可选，直接回车就可</p>
 <p>后面选择skip就可</p>
-<p><img alt="image.png" src="../../resource/637092.png" /></p>
 <p>最后重启网关</p>
-<p><img alt="image.png" src="../../resource/637093.png" /></p>
 <p>选择web ui</p>
 <p>如果不能成功运行，就按下面顺序执行</p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>openclaw gateway run
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>openclaw dashboard
 </code></pre></div>
-成功运行如下
-<img alt="image.png" src="../../resource/637111.png" /></p>
+成功运行如下</p>
 <p>（可选）
 如果网关日志报警告上下文窗口过小，可以修改下面配置</p>
-<p><img alt="image.png" src="../../resource/637112.png" /></p>
 <p>在.openclaw目录下的openclaw.json文件中修改这两个参数</p>
-<p><img alt="image.png" src="../../resource/637113.png" /></p>
 
 
 

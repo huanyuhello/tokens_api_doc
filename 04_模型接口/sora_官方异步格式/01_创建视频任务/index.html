@@ -4941,6 +4941,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    创建视频任务
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -4957,6 +4975,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -6616,6 +6714,75 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6632,7 +6799,69 @@
 
 
 <h1 id="_1">创建视频任务<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>(无法提取内容，请访问: https://huanyuhello.github.io/tokens_api_doc/420227569e0)</p>
+<p>官方异步格式
+创建视频任务
+<strong>POST</strong> <code>https://4sapi.com/v1/videos</code></p>
+<h2 id="_2">请求参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Authorization
+在 Header 添加参数 Authorization，其值为在 Bearer 之后拼接 Token
+示例：
+Authorization: Bearer <strong><em>*</em></strong><strong><em>*</em></strong><strong>*</strong>*</p>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>Content-Type</td>
+<td>{{Authorization}}</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td>必需</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>prompt</code></td>
+<td>string</td>
+<td>必需</td>
+<td>seconds</td>
+<td></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>string</td>
+<td>可选</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">返回响应<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_4">请求示例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>--location<span class="w"> </span>--request<span class="w"> </span>POST<span class="w"> </span><span class="s1">&#39;https://4sapi.com/v1/videos&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header<span class="w"> </span><span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--form<span class="w"> </span><span class="s1">&#39;model=&quot;sora-2&quot;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--form<span class="w"> </span><span class="s1">&#39;prompt=&quot;画面动起来&quot;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--form<span class="w"> </span><span class="s1">&#39;seconds=&quot;4&quot;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>--form<span class="w"> </span><span class="s1">&#39;input_reference=@&quot;/Users/xiangsx/Downloads/RHTtTcBrlY5wGxop9ux8DqRckyIKxd.png&quot;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>--form<span class="w"> </span><span class="s1">&#39;size=&quot;1280x720&quot;&#39;</span>
+</code></pre></div>
+<h2 id="_5">响应示例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{}</span>
+</code></pre></div>
 
 
 

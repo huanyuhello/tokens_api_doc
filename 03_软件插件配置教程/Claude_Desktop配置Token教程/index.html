@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#claude-desktop-tokens" class="md-skip">
+        <a href="#claude-desktop-4sapi" class="md-skip">
           跳转至
         </a>
       
@@ -6720,7 +6720,7 @@
 
 
 
-<h1 id="claude-desktop-tokens">Claude Desktop 配置 tokens 教程（测试中）<a class="headerlink" href="#claude-desktop-tokens" title="Permanent link">&para;</a></h1>
+<h1 id="claude-desktop-4sapi">Claude Desktop 配置 4SAPI 教程（测试中）<a class="headerlink" href="#claude-desktop-4sapi" title="Permanent link">&para;</a></h1>
 <p>⚠️ 重要前提（必须看）
 必须使用最新版 Claude Desktop：低版本可能没有开发者模式或第三方推理配置入口。
 建议先保持未登录状态：不需要先登录 Claude 官方账号。如果已经登录，建议先退出后再配置。
@@ -6732,34 +6732,27 @@ Gateway base URL 需要是 HTTPS 地址：并且对应服务需要支持 Anthrop
 2.如果当前界面不好直接点菜单，可以按键盘 Tab 切到左上角菜单区域，再按回车打开菜单。
 3.在顶部菜单栏选择 Help（帮助） → Troubleshooting（疑难解答）。
 4.在弹出的子菜单里点击 Enable Developer Mode（启用开发者模式）</p>
-<p><img alt="image.png" src="../../resource/647839.png" /></p>
-<p><img alt="image.png" src="../../resource/647869.png" />
-启用成功后，顶部菜单栏会多出一个 Developer（开发者） 菜单</p>
+<p>启用成功后，顶部菜单栏会多出一个 Developer（开发者） 菜单</p>
 <h2 id="2-api">步骤 2：进入第三方 API 配置页面<a class="headerlink" href="#2-api" title="Permanent link">&para;</a></h2>
 <p>1.点击新出现的 Developer 菜单。
 2.选择 Configure Third-Party Inference…（配置第三方推理…）。</p>
-<p><img alt="image.png" src="../../resource/647841.png" /></p>
 <h2 id="3-base-url-api-key">步骤 3：填写 Base URL 和 API Key（最关键一步）<a class="headerlink" href="#3-base-url-api-key" title="Permanent link">&para;</a></h2>
 <p>打开配置窗口后，按下面方式设置：</p>
 <p>Use this configuration：打开开关，必须开启。</p>
 <p>Gateway：选择 Anthropic-compatible。</p>
-<p>Gateway base URL  ：<a href="http://47.102.134.41:3000">http://47.102.134.41:3000</a></p>
+<p>Gateway base URL：<a href="https://4sapi.com">https://4sapi.com</a></p>
 <p>Gateway API key：粘贴你的 API Key，也就是控制台的令牌管理复制出来的那串密钥。</p>
 <p>Gateway auth scheme：一般保持默认即可。</p>
 <p>Gateway extra headers：一般不用填写。</p>
 <p>设置完后，点击右下角 Apply locally（本地应用）。</p>
-<p><img alt="image.png" src="../../resource/647871.png" /></p>
 <p>选择重新启动软件</p>
-<p>选择第一个
-<img alt="image.png" src="../../resource/647878.png" /></p>
+<p>选择第一个</p>
 <p>选择模型</p>
-<p><img alt="image.png" src="../../resource/647880.png" /></p>
 <h2 id="4">步骤 4：验证是否成功<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <p>配置完成后，Claude Desktop 可能会提示重启；如果没有提示，也建议手动完全退出后重新打开。
 重新打开后，进入 Cowork、Code 或 Projects 相关页面。
 输入一个简单问题测试。
 如果模型能正常响应，或者界面中显示的是你第三方 API 提供的模型，就说明配置成功</p>
-<p><img alt="image.png" src="../../resource/647886.png" /></p>
 
 
 

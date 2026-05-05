@@ -5118,6 +5118,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    创建视频任务
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -5134,6 +5152,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -6616,6 +6664,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6632,7 +6699,27 @@
 
 
 <h1 id="_1">创建视频任务<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>(无法提取内容，请访问: https://huanyuhello.github.io/tokens_api_doc/382981669e0)</p>
+<p>是否需要水印，不传默认无水印</p>
+<p>示例:falseprivateboolean 可选是否隐藏视频，true-视频不会发布，同时视频无法进行 remix(二次编辑)， 默认为 false</p>
+<p>示例:falsecharacter_urlstring 可选创建角色需要的视频链接，注意视频中一定不能出现真人，否则会失败</p>
+<p>character_timestampsstring 可选视频角色出现的秒数范围，格式 {start},{end}, 注意 end-start 的范围 1～3秒</p>
+<h2 id="_2">返回响应<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>🟢200成功application/json生成代码Body生成代码object 请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/videos&#39; \
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Authorization: Bearer &#39; \
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--form &#39;model=&quot;sora-2&quot;&#39; \
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--form &#39;prompt=&quot;画面动起来&quot;&#39; \
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--form &#39;seconds=&quot;15&quot;&#39; \
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>--form &#39;input_reference=@&quot;/Users/xiangsx/Downloads/RHTtTcBrlY5wGxop9ux8DqRckyIKxd.png&quot;&#39; \
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>--form &#39;size=&quot;1280x720&quot;&#39; \
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>--form &#39;watermark=&quot;false&quot;&#39; \
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>--form &#39;private=&quot;false&quot;&#39; \
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>--form &#39;character_url=&quot;&quot;&#39; \
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>--form &#39;character_timestamps=&quot;&quot;&#39;
+</code></pre></div>
+响应示例响应示例
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{}
+</code></pre></div></p>
 
 
 

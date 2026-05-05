@@ -4466,6 +4466,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图像编辑（gpt-image-2）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -4482,6 +4500,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -6616,6 +6664,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6632,7 +6699,46 @@
 
 
 <h1 id="gpt-image-2">图像编辑（gpt-image-2）<a class="headerlink" href="#gpt-image-2" title="Permanent link">&para;</a></h1>
-<p>(无法提取内容，请访问: https://huanyuhello.github.io/tokens_api_doc/448573555e0)</p>
+<p>原图（支持 PNG/JPEG/WebP/GIF），可<strong>同名多次</strong>传入 1-6 张参考图</p>
+<p>maskfile 可选可选 mask，<strong>必须 PNG 或 WebP</strong>（需 alpha 通道）。透明区 = 需要重绘，不透明区 = 保持原样</p>
+<p>sizestring 可选auto（默认，模型自选）1024x1024、1536x1024、1024x1536、2048x2048、2048x1152、3840x2160、2160x3840</p>
+<p>qualitystring 可选low（快，推荐草稿）/ medium / high（实际质量由 Codex 上游决定，可能降级）/ auto（默认）</p>
+<p>backgroundstring 可选auto（默认）/ opaque。不支持 transparent，传入会被 Codex 拒绝</p>
+<p>ninteger 可选要生成的图像数。必须介于 1 和 10 之间。</p>
+<p>response_formatstring 可选b64_json/ url</p>
+<p>streamstring 可选true / 1/ yes/ on → 走 SSE</p>
+<p>instructionsstring 可选system prompt</p>
+<p>output_formatstring 可选png / jpeg / webp</p>
+<p>output_compressionstring 0-100可选partial_imagesstring 仅流式可选moderationstring 可选auto / low</p>
+<p>input_fidelitystring 可选参考图保真度（Codex 扩展字段）</p>
+<h2 id="_1">返回响应<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>🟢200成功application/json生成代码Body生成代码createinteger 必需dataarray[string]必需请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/images/edits&#39; \
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Accept: application/json&#39; \
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Authorization;&#39; \
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--form &#39;model=&quot;gpt-image-2&quot;&#39; \
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--form &#39;prompt=&quot;提示词&quot;&#39; \
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>--form &#39;image=@&quot;&quot;&#39;
+</code></pre></div>
+响应示例响应示例
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;created&quot;: 1776935730,
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;data&quot;: [
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        {
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>            &quot;url&quot;: &quot;https://oss.filenest.top/uploads/3fe1f778-9aa6-469c-b69f-a8897243c740.png&quot;
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        }
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    ],
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    &quot;usage&quot;: {
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        &quot;total_tokens&quot;: 1140,
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        &quot;input_tokens&quot;: 580,
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        &quot;output_tokens&quot;: 560,
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        &quot;input_tokens_details&quot;: {
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>            &quot;text_tokens&quot;: 20,
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>            &quot;image_tokens&quot;: 560
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        }
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    }
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>}
+</code></pre></div></p>
 
 
 

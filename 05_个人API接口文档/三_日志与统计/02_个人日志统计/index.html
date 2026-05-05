@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -6095,6 +6095,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    个人日志统计
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -6111,6 +6129,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -6581,6 +6690,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        返回响应
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        请求示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6596,8 +6785,116 @@
 
 
 
-<h1 id="2">2. 个人日志统计<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
-<p>(无法提取内容，请访问: https://huanyuhello.github.io/tokens_api_doc/431071420e0)</p>
+<h1 id="_1">个人日志统计<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>三、日志与统计
+2. 个人日志统计
+<strong>GET</strong> <code>https://4sapi.com/api/log/self/stat</code></p>
+<h2 id="_2">请求参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="query">Query 参数<a class="headerlink" href="#query" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td></td>
+<td>日志类型</td>
+<td></td>
+</tr>
+<tr>
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td></td>
+<td>开始时间戳</td>
+<td></td>
+</tr>
+<tr>
+<td><code>end_timestamp</code></td>
+<td>string</td>
+<td></td>
+<td>结束时间戳</td>
+<td></td>
+</tr>
+<tr>
+<td><code>token_name</code></td>
+<td>string</td>
+<td></td>
+<td>令牌名称</td>
+<td></td>
+</tr>
+<tr>
+<td><code>model_name</code></td>
+<td>string</td>
+<td></td>
+<td>模型名称</td>
+<td></td>
+</tr>
+<tr>
+<td><code>channel</code></td>
+<td>integer</td>
+<td></td>
+<td>渠道 ID</td>
+<td></td>
+</tr>
+<tr>
+<td><code>group</code></td>
+<td>string</td>
+<td></td>
+<td>分组</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>New-Api-User</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">返回响应<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>data
+必需
+quota
+必需
+rpm
+必需
+tpm
+必需
+message
+必需
+success
+必需</p>
+<h2 id="_4">请求示例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>--location<span class="w"> </span>--request<span class="w"> </span>GET<span class="w"> </span><span class="s1">&#39;https://4sapi.com/api/log/self/stat?type=&amp;start_timestamp=&amp;end_timestamp=&amp;token_name=&amp;model_name=&amp;channel=&amp;group=&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header<span class="w"> </span><span class="s1">&#39;Authorization: user-token&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header<span class="w"> </span><span class="s1">&#39;New-Api-User: user-id&#39;</span>
+</code></pre></div>
+<h2 id="_5">响应示例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span><span class="nt">&quot;data&quot;</span><span class="p">:{</span><span class="nt">&quot;quota&quot;</span><span class="p">:</span><span class="mi">32983187</span><span class="p">,</span><span class="nt">&quot;rpm&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="nt">&quot;tpm&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">}</span>
+</code></pre></div>
 
 
 

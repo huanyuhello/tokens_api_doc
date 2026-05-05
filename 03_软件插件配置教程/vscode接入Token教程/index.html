@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vscodetokens" class="md-skip">
+        <a href="#vscode4sapi" class="md-skip">
           跳转至
         </a>
       
@@ -1711,7 +1711,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        在配  置中添加以下代码：
+        在配置中添加以下代码：
       
     </span>
   </a>
@@ -6714,7 +6714,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        在配  置中添加以下代码：
+        在配置中添加以下代码：
       
     </span>
   </a>
@@ -6754,21 +6754,21 @@
 
 
 
-<h1 id="vscodetokens">vscode接入tokens教程<a class="headerlink" href="#vscodetokens" title="Permanent link">&para;</a></h1>
+<h1 id="vscode4sapi">vscode接入4sapi教程<a class="headerlink" href="#vscode4sapi" title="Permanent link">&para;</a></h1>
 <p>前置条件：</p>
-<p>一个tokens claudecode的令牌key <a href="http://47.102.134.41:3000">http://47.102.134.41:3000</a></p>
+<p>一个4sapi claudecode的令牌key <a href="https://4sapi.com">https://4sapi.com</a></p>
 <p><strong>安装 Claude Code：</strong>
 要安装 Claude Code，请按以下两个流程进行:
 <strong>1、本地安装（推荐）</strong>
 <strong>macOS, Linux, WSL，Windows PowerShell，Windows CMD:</strong></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm install -g @anthropic-ai/claude-code
 </code></pre></div>
 <strong>2、配置本地的sttings.json或者环境变量（二选一如有配置请忽略）</strong>
 <code>settings文件路径 C:\Users\用户名\.claude\settings.json</code></p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &quot;env&quot;: {
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;ANTHROPIC_AUTH_TOKEN&quot;: &quot;sk-hUOgVOGw0qdyk*****************&quot;,
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;ANTHROPIC_BASE_URL&quot;: &quot;http://47.102.134.41:3000&quot;,
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;ANTHROPIC_BASE_URL&quot;: &quot;https://4sapi.com&quot;,
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;ANTHROPIC_DEFAULT_HAIKU_MODEL&quot;: &quot;claude-opus-4-6&quot;,
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    &quot;ANTHROPIC_DEFAULT_OPUS_MODEL&quot;: &quot;claude-opus-4-6&quot;,
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    &quot;ANTHROPIC_DEFAULT_SONNET_MODEL&quot;: &quot;claude-opus-4-6&quot;,
@@ -6779,19 +6779,14 @@
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>}
 </code></pre></div>
 <strong>3、测试使用cmd输入claude是否能正常对话</strong></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>注意！！！claude code会自动读取文件夹下的文件，建议一个空文件夹测试。防止消耗大量token
 </code></pre></div>
-<img alt="image.png" src="../../resource/637437.png" />
-<strong>安装 VScode插件（Claude Code for VS Code）：</strong></p>
+<p><strong>安装 VScode插件（Claude Code for VS Code）：</strong></p>
 <h4 id="1vscode">1、打开VScode界面<a class="headerlink" href="#1vscode" title="Permanent link">&para;</a></h4>
 <h4 id="2vscode">2、打开VScode的扩展<a class="headerlink" href="#2vscode" title="Permanent link">&para;</a></h4>
-<p><img alt="image.png" src="../../resource/618211.png" /></p>
 <h4 id="3claude">3、在扩展商城中搜索Claude，就会出现许多相关插件<a class="headerlink" href="#3claude" title="Permanent link">&para;</a></h4>
-<p><img alt="image.png" src="../../resource/637957.png" /></p>
-<h5 id="_1">在配  置中添加以下代码：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
+<h5 id="_1">在配置中添加以下代码：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
 <h4 id="4claude">4、打开插件,按照上面流程配置好Claude即可使用<a class="headerlink" href="#4claude" title="Permanent link">&para;</a></h4>
-<p><img alt="image.png" src="../../resource/618222.png" /></p>
-<p><img alt="image.png" src="../../resource/618223.png" /></p>
 
 
 
