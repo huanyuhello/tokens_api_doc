@@ -1,5 +1,5 @@
-site_name: 4sAPI 文档
-site_description: 4sAPI 接口文档 - 大模型 API 中转服务
+site_name: Tokens API 接入文档
+site_description: Tokens API 接入文档 - 大模型 API 中转服务
 site_url: ""
 docs_dir: docs
 site_dir: site
@@ -73,25 +73,25 @@ nav:
     - API接口返回报错代码含义: 02_FAQ常见问题/常见误区/05_API接口返回报错代码含义.md
   - 问题自查方法: 02_FAQ常见问题/问题自查方法.md
 - 软件/插件配置教程:
-  - Claude Desktop配置4SAPI教程: 03_软件插件配置教程/Claude_Desktop配置4SAPI教程.md
-  - Coze配置使用4SAPI教程: 03_软件插件配置教程/Coze配置使用4SAPI教程.md
-  - Cursor接入4sapi教程: 03_软件插件配置教程/Cursor接入4sapi教程.md
-  - Dify配置使用4sAPI教程: 03_软件插件配置教程/Dify配置使用4sAPI教程.md
+  - Claude Desktop配置Token教程: 03_软件插件配置教程/Claude_Desktop配置Token教程.md
+  - Coze配置使用Token教程: 03_软件插件配置教程/Coze配置使用Token教程.md
+  - Cursor接入Token教程: 03_软件插件配置教程/Cursor接入Token教程.md
+  - Dify配置使用Token教程: 03_软件插件配置教程/Dify配置使用Token教程.md
   - GPT-codex安装教程: 03_软件插件配置教程/GPT-codex安装教程.md
-  - Hermes Agent linux安装接入4sapi教程: 03_软件插件配置教程/Hermes_Agent_linux安装接入4sapi教程.md
+  - Hermes Agent linux安装接入Token教程: 03_软件插件配置教程/Hermes_Agent_linux安装接入Token教程.md
   - OpenClaw接入API教程: 03_软件插件配置教程/OpenClaw接入API教程.md
   - Trae配置使用API教程: 03_软件插件配置教程/Trae配置使用API教程.md
-  - WorkBuddy接入4sapi教程: 03_软件插件配置教程/WorkBuddy接入4sapi教程.md
+  - WorkBuddy接入Token教程: 03_软件插件配置教程/WorkBuddy接入Token教程.md
   - cc switch使用教程: 03_软件插件配置教程/cc_switch使用教程.md
   - claudecode安装教程 win mac: 03_软件插件配置教程/claudecode安装教程_win_mac.md
   - gemini cli配置教程: 03_软件插件配置教程/gemini_cli配置教程.md
-  - n8n配置使用4sapi教程: 03_软件插件配置教程/n8n配置使用4sapi教程.md
+  - n8n配置使用Token教程: 03_软件插件配置教程/n8n配置使用Token教程.md
   - open claw在云服务器linux环境下通过终端配置api: 03_软件插件配置教程/open_claw在云服务器linux环境下通过终端配置api.md
   - opencode接入api教程: 03_软件插件配置教程/opencode接入api教程.md
-  - vscode接入4sapi教程: 03_软件插件配置教程/vscode接入4sapi教程.md
+  - vscode接入Token教程: 03_软件插件配置教程/vscode接入Token教程.md
   - 接入Cherry Studio: 03_软件插件配置教程/接入Cherry_Studio.md
   - 接入chatbox: 03_软件插件配置教程/接入chatbox.md
-  - 腾讯云openclaw接入4sapi教程: 03_软件插件配置教程/腾讯云openclaw接入4sapi教程.md
+  - 腾讯云openclaw接入Token教程: 03_软件插件配置教程/腾讯云openclaw接入Token教程.md
 - 模型接口:
   - 3D 模型:
     - Hunyuan3D-2: 04_模型接口/3D模型/01_Hunyuan3D-2.md
