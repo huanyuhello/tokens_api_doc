@@ -24,38 +24,29 @@
 }
 
 ## 请求参数
-Header 参数生成代码
-### 
+Header 参数生成代码Acceptstring 必需示例:application/jsonAuthorizationstring 必需示例:sk-Content-Typestring 必需示例:application/jsonBody 参数application/json必填生成代码promptstring 描述文本必需base64Arrayarray[string]必需Base64图片数组
 
-- 
-- 
-- 
-Body 参数application/json必填生成代码
-### 
+taskIdstring 已有任务ID
+可选customIdstring 自定义ID
+可选botTypestring 机器人类型
+可选notifyHookstring 可选回调地址, 为空时使用全局notifyHook
 
-- 
-- 
-- 
-示例
+indexstring 索引
+可选statestring 自定义参数可选contentstring 内容可选maskBase64string 遮罩Base64
+可选示例
 ## 返回响应
-🟢200成功application/json生成代码Body生成代码
-### 
-
-- 
-- 
-- 
-请求示例请求示例ShellJavaScriptJavaSwiftcURLcURL-WindowsHttpiewgetPowerShell
+🟢200成功application/json生成代码Body生成代码object 请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
 ```
-curl --location --request POST &#x27;http://47.102.134.41:3000/mj/submit/video&#x27; \
---header &#x27;Accept: application/json&#x27; \
---header &#x27;Authorization: sk-&#x27; \
---header &#x27;Content-Type: application/json&#x27; \
---data-raw &#x27;{
+curl --location --request POST 'https://4sapi.com/mj/submit/video' \
+--header 'Accept: application/json' \
+--header 'Authorization: sk-' \
+--header 'Content-Type: application/json' \
+--data-raw '{
     "prompt": "一只可爱的小猫在花园里缓慢走动",
     "base64Array": [
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
     ]
-}&#x27;
+}'
 ```
 响应示例响应示例
 ```

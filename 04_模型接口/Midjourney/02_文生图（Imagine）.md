@@ -44,36 +44,23 @@ prompt预设值参数解释：
 使用5.1版本的模型
 
 ## 请求参数
-Header 参数生成代码
-### 
+Header 参数生成代码Acceptstring 必需示例:application/jsonAuthorizationstring 必需示例:sk-Content-Typestring 必需示例:application/jsonBody 参数application/json必填生成代码botTypestring 可选promptstring 提示词必需base64Arrayarray[string]可选垫图base64数组
 
-- 
-- 
-- 
-Body 参数application/json必填生成代码
-### 
+accountFilterobject 可选channelIdstring 频道ID可选instanceIdstring 账号实例ID可选modesarray[string]账号模式
+可选remarkstring 备注可选remixstring 账号是否remix可选remixAutoConsideredboolean 可选账号过滤时，remix自动提交 视为 账号的remix为false
 
-- 
-- 
-- 
-示例
+notifyHookboolean 可选statestring 可选示例
 ## 返回响应
-🟢200成功application/json生成代码Body生成代码
-### 
-
-- 
-- 
-- 
-请求示例请求示例ShellJavaScriptJavaSwiftcURLcURL-WindowsHttpiewgetPowerShell
+🟢200成功application/json生成代码Body生成代码codeinteger 可选descriptionstring 可选propertiesobject 可选resultstring 可选请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
 ```
-curl --location --request POST &#x27;http://47.102.134.41:3000/mj/submit/imagine&#x27; \
---header &#x27;Accept: application/json&#x27; \
---header &#x27;Authorization: sk-&#x27; \
---header &#x27;Content-Type: application/json&#x27; \
---data-raw &#x27;{
+curl --location --request POST 'https://4sapi.com/mj/submit/imagine' \
+--header 'Accept: application/json' \
+--header 'Authorization: sk-' \
+--header 'Content-Type: application/json' \
+--data-raw '{
     "mode": "RELAX",
     "prompt": "Cat"
-}&#x27;
+}'
 ```
 响应示例响应示例
 ```

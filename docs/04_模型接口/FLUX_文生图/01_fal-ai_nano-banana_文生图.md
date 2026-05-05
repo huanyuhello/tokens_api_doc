@@ -3,35 +3,19 @@
 官方文档: [https://fal.ai/models/fal-ai/nano-banana](https://fal.ai/models/fal-ai/nano-banana)
 
 ## 请求参数
-Header 参数生成代码
-### 
+Header 参数生成代码Authorizationstring 必需示例:sk-Body 参数application/json必填生成代码promptstring 生成图片的提示词。必需num_imagesstring 必需生成图片数量。范围值1-4。默认值：1
 
-- 
-- 
-- 
-Body 参数application/json必填生成代码
-### 
-
-- 
-- 
-- 
 示例
 ## 返回响应
-🟢200成功application/json生成代码Body生成代码
-### 
-
-- 
-- 
-- 
-请求示例请求示例ShellJavaScriptJavaSwiftcURLcURL-WindowsHttpiewgetPowerShell
+🟢200成功application/json生成代码Body生成代码statusstring 必需request_idstring 必需response_urlstring 必需status_urlstring 必需cancel_urlstring 必需logsstring 必需metricsstring 必需queue_positionstring 必需请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
 ```
-curl --location --request POST &#x27;http://47.102.134.41:3000/fal-ai/nano-banana&#x27; \
---header &#x27;Authorization: sk-&#x27; \
---header &#x27;Content-Type: application/json&#x27; \
---data-raw &#x27;{
-    "prompt": "An action shot of a black lab swimming in an inground suburban swimming pool. The camera is placed meticulously on the water line, dividing the image in half, revealing both the dogs head above water holding a tennis ball in it&#x27;\&#x27;&#x27;s mouth, and it&#x27;\&#x27;&#x27;s paws paddling underwater.",
+curl --location --request POST 'https://4sapi.com/fal-ai/nano-banana' \
+--header 'Authorization: sk-' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "prompt": "An action shot of a black lab swimming in an inground suburban swimming pool. The camera is placed meticulously on the water line, dividing the image in half, revealing both the dogs head above water holding a tennis ball in it'\''s mouth, and it'\''s paws paddling underwater.",
     "num_images": 1
-}&#x27;
+}'
 ```
 响应示例响应示例
 ```

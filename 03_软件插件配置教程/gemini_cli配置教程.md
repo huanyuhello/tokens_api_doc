@@ -23,18 +23,10 @@ sudo npm install -g @google/gemini-cli
 安装完成后
 打开cc switch 点击上方gemini图标
 
-![image.png](../resource/637183.png)
-
 点击右上角的加号后
 选择自定义供应商
 
-![image.png](../resource/637186.png)
-
 完整配置如下
-
-![image.png](../resource/637188.png)
 
 最后 打开终端
 输入`gemini` 就可以聊天了
-
-![image.png](../resource/637190.png)

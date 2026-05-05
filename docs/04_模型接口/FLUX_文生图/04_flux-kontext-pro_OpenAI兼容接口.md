@@ -19,36 +19,24 @@ size 支持
 1344x576
 
 ## 请求参数
-Header 参数生成代码
-### 
+Header 参数生成代码Authorizationstring 必需示例:sk-Body 参数application/json必填生成代码promptstring 必需所需图像的文本描述。最大长度为 1000 个字符。
 
-- 
-- 
-- 
-Body 参数application/json必填生成代码
-### 
+nstring 必需要生成的图像数。必须介于 1 和 10 之间。
 
-- 
-- 
-- 
+sizestring 必需生成图像的大小。必须是256x256、512x512或 1024x1024之一。
+
 示例
 ## 返回响应
-🟢200成功application/json生成代码Body生成代码
-### 
-
-- 
-- 
-- 
-请求示例请求示例ShellJavaScriptJavaSwiftcURLcURL-WindowsHttpiewgetPowerShell
+🟢200成功application/json生成代码Body生成代码object 请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
 ```
-curl --location --request POST &#x27;http://47.102.134.41:3000/v1/images/generations&#x27; \
---header &#x27;Authorization: sk-&#x27; \
---header &#x27;Content-Type: application/json&#x27; \
---data-raw &#x27;{
+curl --location --request POST 'https://4sapi.com/v1/images/generations' \
+--header 'Authorization: sk-' \
+--header 'Content-Type: application/json' \
+--data-raw '{
     "model": "flux-kontext-pro",
     "prompt": "a beautiful landscape with a river and mountains",
     "size": "1024x1024"
-}&#x27;
+}'
 ```
 响应示例响应示例
 ```
