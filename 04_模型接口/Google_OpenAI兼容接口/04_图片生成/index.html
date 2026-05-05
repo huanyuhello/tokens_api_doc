@@ -3107,6 +3107,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6690,6 +6718,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6721,82 +6777,58 @@
 
 
 <h1 id="_1">图片生成<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>Gemini 也提供了图像生成能力，作为一种替代方案。与 Imagen 3.0 相比，Gemini 的图像生成更适合于需要上下文理解和推理的场景，而非追求极致的艺术表现和视觉质量。
-更高的视觉质量 → 相比 exp 版，图像更锐利、更丰富、更清晰。
-更准确的文本呈现 → 生成的视觉中，文本更加精准、干净、易读。
-显著减少过滤拦截 → 得益于更智能、宽松的过滤机制，创作时几乎不再被打断。
-说明：
-模型 id：gemini-2.0-flash-preview-image-generation
-费率（输入→输出）：
-0.1
-→
-0.1→0.4/M tokens
-需要新增参数来体验新特性 "modalities":["text","image"]
-图片以 Base64 编码形式传递与输出
-作为实验模型，建议明确指出 “输出图片”，否则可能只有文本
-输出图片的默认高度为 1024px
-python 调用需要最新的 openai sdk 支持，请先运行 pip install -U openai
-了解更多请访问 Gemini 官方文档</p>
 <h2 id="_2">请求参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Header 参数生成代码Authorizationstring 必需示例:sk-<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong>*</strong>Body 参数application/json生成代码promptstring 必需所需图像的文本描述。最大长度为 1000 个字符。</p>
-<p>nstring 必需要生成的图像数。必须介于 1 和 10 之间。</p>
-<p>sizestring 必需生成图像的大小。必须是256x256、512x512或 1024x1024之一。</p>
-<p>示例</p>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: sk-<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong>*</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prompt</code></td>
+<td>string</td>
+<td>必需</td>
+<td>所需图像的文本描述。最大长度为 1000 个字符。</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td>string</td>
+<td>必需</td>
+<td>要生成的图像数。必须介于 1 和 10 之间。</td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>string</td>
+<td>必需</td>
+<td>生成图像的大小。必须是256x256、512x512或 1024x1024之一。 示例</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_3">返回响应<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码createdinteger 必需dataarray [object] 必需urlstring 必需请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/chat/completions&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Authorization: sk-**************************&#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Content-Type: application/json&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--data-raw &#39;{
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &quot;model&quot;: &quot;gemini-3.1-flash-image-preview&quot;,
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;stream&quot;: false,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &quot;messages&quot;: [
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        {
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            &quot;role&quot;: &quot;user&quot;,
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>            &quot;content&quot;: &quot;A cat in a tree&quot;
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        }
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    ]
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>}&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;id&quot;: &quot;chatcmpl-20260407095204703049324vNEFOg55&quot;,
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;model&quot;: &quot;gemini-3.1-flash-image-preview-token&quot;,
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;object&quot;: &quot;chat.completion&quot;,
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;created&quot;: 1775555539,
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    &quot;choices&quot;: [
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        {
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>            &quot;index&quot;: 0,
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>            &quot;message&quot;: {
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>                &quot;role&quot;: &quot;assistant&quot;,
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>                &quot;content&quot;: &quot;![image](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/6xeJSlAAAQAAAAEAABd/anVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAAF1lqdW1iAAAAR2p1bWRjMm1hABE+Gf8AwUk/4LYXth4y8VarpXwL/Z0m1Fv+EX03xJe3Vjpb2RuXX+1LLw6Ql/4jvVgjmii1HUIrWyllDLZSqDuX3cs4KyjMcFDH46nWwmAVVQnmldzbrTjZunhYJSqYipa9o0lJRd3OXR+zF0KFGKVKMotpQpRheU3ZK11ZJWSXM9Vq1q2fmr+3d+054l/bu+PM3ws+DF8vg34GWd+3e2hg1CaGOVkt7pre4LGNJCEDh494Kqy8gMW6jnG3z1SqYnE0qFSc4xjSksTRlSahPmlJcnvJx+MHKKlB3SXW7b2vdLeyWju+idnqJtL4kt0t1dbaK99ktd9r73v6/G2yFYgykbASBuIIzjcWzt3NkYLDkbsABSRzGr3ZtwRAxy2chmOFyDkbVO0EZUgAgkAlSFY463SIZZbAuFZiykDdFIzHO35S2MrgH5VGAWUsCANo8+1eO5Nw0flzFS7ARmNmI+YYGNoGclQFAIzwvLYHJQ5Z1ZRdkotX81dapO+i031+4TlZbvV6NdFaK1V3ruk/l71tf//Z)&quot;
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>            },
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>            &quot;finish_reason&quot;: &quot;stop&quot;
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>        }
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    ],
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    &quot;usage&quot;: {
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>        &quot;prompt_tokens&quot;: 6,
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        &quot;completion_tokens&quot;: 1484,
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        &quot;total_tokens&quot;: 1490,
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>        &quot;prompt_tokens_details&quot;: {
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>            &quot;cached_tokens&quot;: 0,
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>            &quot;text_tokens&quot;: 6,
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>            &quot;audio_tokens&quot;: 0,
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>            &quot;image_tokens&quot;: 0
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>        },
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        &quot;completion_tokens_details&quot;: {
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>            &quot;text_tokens&quot;: 0,
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>            &quot;audio_tokens&quot;: 0,
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>            &quot;reasoning_tokens&quot;: 0
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>        },
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>        &quot;input_tokens&quot;: 0,
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>        &quot;output_tokens&quot;: 0,
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>        &quot;input_tokens_details&quot;: null,
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>        &quot;claude_cache_creation_5_m_tokens&quot;: 0,
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>        &quot;claude_cache_creation_1_h_tokens&quot;: 0
-<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    }
-<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>}
-</code></pre></div></p>
 
 
 

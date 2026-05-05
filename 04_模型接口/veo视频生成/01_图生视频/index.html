@@ -5494,6 +5494,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6690,6 +6718,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6721,42 +6777,88 @@
 
 
 <h1 id="_1">图生视频<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>支持多张参考图片，以数组形式提供图片URL
-图片将用于辅助AI理解视频生成需求
-支持常见图片格式：JPG、PNG、WebP等
-建议图片尺寸不超过2048x2048像素</p>
 <h2 id="_2">请求参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Header 参数生成代码Authorizationstring 必需示例:sk-Body 参数application/json必填生成代码promptstring 视频生成的文本描述必需modelstring 使用的模型名称必需imagesstring 可选参考图片URL数组，用于辅助视频生成</p>
-<p>enhance_promptboolean 可选是否增强提示词，默认为 false</p>
-<p>resolutionstring 分辨率必需aspect_ratiostring 宽高比必需示例</p>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例:</td>
+</tr>
+<tr>
+<td><code>sk-</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>必填</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>prompt</code></td>
+<td>string</td>
+<td></td>
+<td>视频生成的文本描述 必需</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td></td>
+<td>使用的模型名称 必需</td>
+</tr>
+<tr>
+<td><code>images</code></td>
+<td>string</td>
+<td>可选</td>
+<td>参考图片URL数组，用于辅助视频生成</td>
+</tr>
+<tr>
+<td><code>enhance_prompt</code></td>
+<td>boolean</td>
+<td>可选</td>
+<td>是否增强提示词，默认为 false</td>
+</tr>
+<tr>
+<td><code>resolution</code></td>
+<td>string</td>
+<td></td>
+<td>分辨率 必需</td>
+</tr>
+<tr>
+<td><code>aspect_ratio</code></td>
+<td>string</td>
+<td></td>
+<td>宽高比 必需 示例</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_3">返回响应<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码object 请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/videos&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Authorization: sk-&#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Content-Type: application/json&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--data-raw &#39;{
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &quot;prompt&quot;: &quot;a cat fly in the sky&quot;,
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;model&quot;: &quot;veo3.1&quot;,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &quot;images&quot;: [
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &quot;https://filesystem.site/cdn/20250612/VfgB5ubjInVt8sG6rzMppxnu7gEfde.png&quot;,
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        &quot;https://filesystem.site/cdn/20250612/998IGmUiM2koBGZM3UnZeImbPBNIUL.png&quot;
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    ],
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    &quot;aspect_ratio&quot;: &quot;16:9&quot;,
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    &quot;resolution&quot;: &quot;1080p&quot;,
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    &quot;enhance_prompt&quot;: true
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>}&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;success&quot;: true,
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;data&quot;: {
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        &quot;taskId&quot;: &quot;veo3:0ff04a94-6c7e-4f86-af66-3adb62214eb2&quot;,
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        &quot;pollingUrl&quot;: &quot;https://asyncdata.net/source/veo3:0ff04a94-6c7e-4f86-af66-3adb62214eb2&quot;,
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        &quot;status&quot;: &quot;processing&quot;,
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        &quot;message&quot;: &quot;Task submitted successfully&quot;
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    }
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>}
-</code></pre></div></p>
 
 
 

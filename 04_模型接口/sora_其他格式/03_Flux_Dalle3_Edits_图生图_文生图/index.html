@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fluxdalle3-edits" class="md-skip">
+        <a href="#flux-dalle3-edits" class="md-skip">
           跳转至
         </a>
       
@@ -4879,6 +4879,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6690,6 +6718,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6720,48 +6776,131 @@
 
 
 
-<h1 id="fluxdalle3-edits">Flux(Dalle3 Edits(图生图&amp;文生图))<a class="headerlink" href="#fluxdalle3-edits" title="Permanent link">&para;</a></h1>
-<p>仅支持 flux-kontext pro、max ，支持多图参考</p>
+<h1 id="flux-dalle3-edits">Flux Dalle3 Edits 图生图 文生图<a class="headerlink" href="#flux-dalle3-edits" title="Permanent link">&para;</a></h1>
 <h2 id="_1">请求参数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Header 参数生成代码Acceptstring 必需示例:application/jsonAuthorizationstring 必需示例:sk-Content-Typestring 必需示例:application/jsonBody 参数application/json必填生成代码promptstring 可选string
-可选
-示例值:
-带上眼镜</p>
-<p>modelstring 可选string
-可选
-示例值:
-flux-kontext-pro</p>
-<p>sizestring 可选string
-可选
-最终会转换成比例，建议直接使用 aspect_ratio
-示例值:
-1024x1024</p>
-<p>aspect_ratiostring 可选string
-可选
-21:9, 16:9, 4:3, 3:2, 1:1, 2:3, 3:4, 9:16, 9:21
-示例值:
-1:1</p>
-<p>imagestring 可选file
-可选
-参考图片，支持多个</p>
-<p>示例</p>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Accept</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: application/json</td>
+</tr>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例:</td>
+</tr>
+<tr>
+<td><code>sk-</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: application/json</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>必填</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>prompt</code></td>
+<td>string</td>
+<td>可选</td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td>示例值: 带上眼镜</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td>可选</td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td>示例值:</td>
+</tr>
+<tr>
+<td><code>flux-kontext-pro</code></td>
+<td>size</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td>最终会转换成比例，建议直接使用 aspect_ratio 示例值: 1024x1024</td>
+</tr>
+<tr>
+<td><code>aspect_ratio</code></td>
+<td>string</td>
+<td>可选</td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td>21:9, 16:9, 4:3, 3:2, 1:1, 2:3, 3:4, 9:16, 9:21 示例值: 1:1</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>string</td>
+<td>可选</td>
+<td></td>
+</tr>
+<tr>
+<td><code>file</code></td>
+<td>可选</td>
+<td></td>
+<td>参考图片，支持多个 示例</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_2">返回响应<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码object 请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/images/edits&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Accept: application/json&#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Authorization: sk-&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--header &#39;Content-Type: application/json&#39; \
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--data-raw &#39;{
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;prompt&quot;: &quot;string&quot;,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &quot;model&quot;: &quot;string&quot;,
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    &quot;size&quot;: &quot;string&quot;,
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    &quot;aspect_ratio&quot;: &quot;string&quot;,
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    &quot;image&quot;: &quot;string&quot;
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>}&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{}
-</code></pre></div></p>
 
 
 

@@ -5368,6 +5368,45 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         返回响应
       
     </span>
@@ -6674,6 +6713,45 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         返回响应
       
     </span>
@@ -6699,26 +6777,64 @@
 
 
 <h1 id="_1">从已生成的任务中创建角色<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>默认值:
-{{Authorization}}</p>
-<p>Body 参数application/x-www-form-urlencoded必填生成代码character_from_taskstring 必需示例:sora-2:task_01kb8a4xs3f73vhgwjfg4zbcv0modelstring 必需示例:sora-2-characterchacter_timestampsstring 可选角色出现在视频中的时间范围，注意 end-start的差值范围在 1～3秒，格式为{start},{end}</p>
-<p>示例:0,3</p>
-<h2 id="_2">返回响应<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码idstring 必需usernamestring 必需permalinkstring 必需profile_picture_urlstring 必需请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/videos&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Authorization: Bearer &#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--data-urlencode &#39;character_from_task=sora-2:task_01kb8a4xs3f73vhgwjfg4zbcv0&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--data-urlencode &#39;model=sora-2-character&#39; \
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--data-urlencode &#39;chacter_timestamps=0,3&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;id&quot;: &quot;string&quot;,
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;username&quot;: &quot;string&quot;,
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;permalink&quot;: &quot;string&quot;,
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;profile_picture_url&quot;: &quot;string&quot;
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>}
-</code></pre></div></p>
+<h2 id="_2">请求参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>可选</td>
+<td>默认值: {{Authorization}}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>character_from_task</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: sora-2:task_01kb8a4xs3f73vhgwjfg4zbcv0</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例:</td>
+</tr>
+<tr>
+<td><code>sora-2-character</code></td>
+<td>chacter_timestamps</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td>角色出现在视频中的时间范围，注意 end-start的差值范围在 1～3秒，格式为{start},{end} 示例: 0,3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">返回响应<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 
 
 

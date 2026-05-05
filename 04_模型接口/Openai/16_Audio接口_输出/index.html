@@ -4301,6 +4301,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6690,6 +6718,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6720,68 +6776,143 @@
 
 
 
-<h1 id="audio">Audio接口 / 输出<a class="headerlink" href="#audio" title="Permanent link">&para;</a></h1>
-<p>本中转所有模型均已适配v1/chat/completions
-只需要把模型名称完整复制到model参数即可使用</p>
+<h1 id="audio">Audio接口 输出<a class="headerlink" href="#audio" title="Permanent link">&para;</a></h1>
 <h2 id="_1">请求参数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Header 参数生成代码Acceptstring 必需示例:application/jsonAuthorizationstring 必需示例:sk-Content-Typestring 必需示例:application/jsonBody 参数application/json生成代码modelstring 必需要使用的模型的 ID。有关哪些模型适用于聊天 API 的详细信息</p>
-<p>messagesarray [object] 必需rolestring 必需contentstring 必需temperaturestring 可选使用什么采样温度，介于 0 和 2 之间。较高的值（如 0.8）将使输出更加随机，而较低的值（如 0.2）将使输出更加集中和确定。 我们通常建议改变这个或top_p但不是两者。</p>
-<p>top_pstring 可选一种替代温度采样的方法，称为核采样，其中模型考虑具有 top_p 概率质量的标记的结果。所以 0.1 意味着只考虑构成前 10% 概率质量的标记。 我们通常建议改变这个或temperature但不是两者。</p>
-<p>nstring 可选为每个输入消息生成多少个聊天完成选项。</p>
-<p>streamstring 可选如果设置，将发送部分消息增量，就像在 ChatGPT 中一样。当令牌可用时，令牌将作为纯数据服务器发送事件data: [DONE]发送，流由消息终止。</p>
-<p>stopstring 可选API 将停止生成更多令牌的最多 4 个序列。</p>
-<p>max_tokensstring 可选聊天完成时生成的最大令牌数。 输入标记和生成标记的总长度受模型上下文长度的限制。</p>
-<p>presence_penaltystring 可选-2.0 和 2.0 之间的数字。正值会根据到目前为止是否出现在文本中来惩罚新标记，从而增加模型谈论新主题的可能性</p>
-<p>frequency_penaltystring 可选-2.0 和 2.0 之间的数字。正值会根据新标记在文本中的现有频率对其进行惩罚，从而降低模型逐字重复同一行的可能性。</p>
-<p>logit_biasstring 可选修改指定标记出现在完成中的可能性。 接受一个 json 对象，该对象将标记（由标记器中的标记 ID 指定）映射到从 -100 到 100 的关联偏差值。从数学上讲，偏差会在采样之前添加到模型生成的 logits 中。确切的效果因模型而异，但 -1 和 1 之间的值应该会减少或增加选择的可能性；像 -100 或 100 这样的值应该导致相关令牌的禁止或独占选择。</p>
-<p>userstring 可选代表您的最终用户的唯一标识符，可以帮助 OpenAI 监控和检测滥用行为。</p>
-<p>示例</p>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Accept</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: application/json</td>
+</tr>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例:</td>
+</tr>
+<tr>
+<td><code>sk-</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: application/json</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td>string</td>
+<td>必需</td>
+<td>要使用的模型的 ID。有关哪些模型适用于聊天 API 的详细信息</td>
+</tr>
+<tr>
+<td><code>messages</code></td>
+<td></td>
+<td></td>
+<td>array [object] 必需</td>
+</tr>
+<tr>
+<td><code>role</code></td>
+<td>string</td>
+<td>必需</td>
+<td></td>
+</tr>
+<tr>
+<td><code>content</code></td>
+<td>string</td>
+<td>必需</td>
+<td></td>
+</tr>
+<tr>
+<td><code>temperature</code></td>
+<td>string</td>
+<td>可选</td>
+<td>使用什么采样温度，介于 0 和 2 之间。较高的值（如 0.8）将使输出更加随机，而较低的值（如 0.2）将使输出更加集中和确定。 我们通常建议改变这个或top_p但不是两者。</td>
+</tr>
+<tr>
+<td><code>top_p</code></td>
+<td>string</td>
+<td>可选</td>
+<td>一种替代温度采样的方法，称为核采样，其中模型考虑具有 top_p 概率质量的标记的结果。所以 0.1 意味着只考虑构成前 10% 概率质量的标记。 我们通常建议改变这个或temperature但不是两者。</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td>string</td>
+<td>可选</td>
+<td>为每个输入消息生成多少个聊天完成选项。</td>
+</tr>
+<tr>
+<td><code>stream</code></td>
+<td>string</td>
+<td>可选</td>
+<td>如果设置，将发送部分消息增量，就像在 ChatGPT 中一样。当令牌可用时，令牌将作为纯数据服务器发送事件data: [DONE]发送，流由消息终止。</td>
+</tr>
+<tr>
+<td><code>stop</code></td>
+<td>string</td>
+<td>可选</td>
+<td>API 将停止生成更多令牌的最多 4 个序列。</td>
+</tr>
+<tr>
+<td><code>max_tokens</code></td>
+<td>string</td>
+<td>可选</td>
+<td>聊天完成时生成的最大令牌数。 输入标记和生成标记的总长度受模型上下文长度的限制。</td>
+</tr>
+<tr>
+<td><code>presence_penalty</code></td>
+<td>string</td>
+<td>可选</td>
+<td>-2.0 和 2.0 之间的数字。正值会根据到目前为止是否出现在文本中来惩罚新标记，从而增加模型谈论新主题的可能性</td>
+</tr>
+<tr>
+<td><code>frequency_penalty</code></td>
+<td>string</td>
+<td>可选</td>
+<td>-2.0 和 2.0 之间的数字。正值会根据新标记在文本中的现有频率对其进行惩罚，从而降低模型逐字重复同一行的可能性。</td>
+</tr>
+<tr>
+<td><code>logit_bias</code></td>
+<td>string</td>
+<td>可选</td>
+<td>修改指定标记出现在完成中的可能性。 接受一个 json 对象，该对象将标记（由标记器中的标记 ID 指定）映射到从 -100 到 100 的关联偏差值。从数学上讲，偏差会在采样之前添加到模型生成的 logits 中。确切的效果因模型而异，但 -1 和 1 之间的值应该会减少或增加选择的可能性；像 -100 或 100 这样的值应该导致相关令牌的禁止或独占选择。</td>
+</tr>
+<tr>
+<td><code>user</code></td>
+<td>string</td>
+<td>可选</td>
+<td>代表您的最终用户的唯一标识符，可以帮助 OpenAI 监控和检测滥用行为。 示例</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_2">返回响应<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码idstring 必需objectstring 必需createdstring 必需choicesarray [object] 必需indexstring 必需messageobject 必需finish_reasonstring 必需usageobject 必需prompt_tokensstring 必需completion_tokensstring 必需total_tokensstring 必需请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/chat/completions&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Accept: application/json&#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Authorization: sk-&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--header &#39;Content-Type: application/json&#39; \
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--data-raw &#39;{
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;model&quot;: &quot;gpt-4o-audio-preview&quot;,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &quot;modalities&quot;: [
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &quot;text&quot;,
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        &quot;audio&quot;
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    ],
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    &quot;audio&quot;: {
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        &quot;voice&quot;: &quot;alloy&quot;,
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        &quot;format&quot;: &quot;wav&quot;
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    },
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    &quot;messages&quot;: [
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        {
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            &quot;role&quot;: &quot;user&quot;,
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>            &quot;content&quot;: &quot;Is a golden retriever a good family dog?&quot;
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        }
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    ]
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>}&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;id&quot;: &quot;chatcmpl-123&quot;,
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;object&quot;: &quot;chat.completion&quot;,
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;created&quot;: 1677652288,
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;choices&quot;: [
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        {
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>            &quot;index&quot;: 0,
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>            &quot;message&quot;: {
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>                &quot;role&quot;: &quot;assistant&quot;,
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>                &quot;content&quot;: &quot;\n\nHello there, how may I assist you today?&quot;
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>            },
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>            &quot;finish_reason&quot;: &quot;stop&quot;
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        }
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    ],
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    &quot;usage&quot;: {
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        &quot;prompt_tokens&quot;: 9,
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>        &quot;completion_tokens&quot;: 12,
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        &quot;total_tokens&quot;: 21
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    }
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>}
-</code></pre></div></p>
 
 
 

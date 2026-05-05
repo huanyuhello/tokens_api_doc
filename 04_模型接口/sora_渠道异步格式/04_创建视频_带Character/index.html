@@ -5256,6 +5256,45 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         返回响应
       
     </span>
@@ -6674,6 +6713,45 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
+        请求参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         返回响应
       
     </span>
@@ -6698,39 +6776,143 @@
 
 
 
-<h1 id="character">创建视频(带 Character)<a class="headerlink" href="#character" title="Permanent link">&para;</a></h1>
-<p>默认值:
-{{Authorization}}</p>
-<p>Body 参数application/x-www-form-urlencoded必填生成代码modelfile 必需
-enum
-必需
-枚举值:
-sora-2
-sora-2-hd
-示例:sora-2promptstring 画面动起来必需secondsstring 10可选input_referencestring 可选示例:file:///Users/xiangsx/Downloads/RHTtTcBrlY5wGxop9ux8DqRckyIKxd.pngsizestring 可选
-宽x高，会忽略具体数据 宽&gt;高 为横屏，宽示例:16x9watermarkstring 可选是否需要水印，不传默认无水印</p>
-<p>示例:trueprivatestring 可选是否隐藏视频，true-视频不会发布，同时视频无法进行 remix(二次编辑)， 默认为 false</p>
-<p>示例:falsecharacter_urlstring 可选创建角色需要的视频链接，注意视频中一定不能出现真人，否则会失败</p>
-<p>示例:https://filesystem.site/cdn/20251030/javYrU4etHVFDqg8by7mViTWHlMOZy.mp4character_timestampsstring 可选视频角色出现的秒数范围，格式 {start},{end}, 注意 end-start 的范围 1～3秒</p>
-<p>示例:1,3character_from_taskstring 可选已完成的任务 id,可以根据已经生成的任务 id，来创建角色</p>
-<h2 id="_1">返回响应<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码object 请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/v1/videos&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Authorization: Bearer &#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--data-urlencode &#39;model=sora-2&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--data-urlencode &#39;prompt=&#39; \
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--data-urlencode &#39;seconds=&#39; \
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>--data-urlencode &#39;input_reference=file:///Users/xiangsx/Downloads/RHTtTcBrlY5wGxop9ux8DqRckyIKxd.png&#39; \
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>--data-urlencode &#39;size=16x9&#39; \
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>--data-urlencode &#39;watermark=true&#39; \
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>--data-urlencode &#39;private=false&#39; \
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>--data-urlencode &#39;character_url=https://filesystem.site/cdn/20251030/javYrU4etHVFDqg8by7mViTWHlMOZy.mp4&#39; \
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>--data-urlencode &#39;character_timestamps=1,3&#39; \
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>--data-urlencode &#39;character_from_task=&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{}
-</code></pre></div></p>
+<h1 id="character">创建视频 带Character<a class="headerlink" href="#character" title="Permanent link">&para;</a></h1>
+<h2 id="_1">请求参数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>默认值: {{Authorization}}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td>file</td>
+<td>必需</td>
+<td></td>
+</tr>
+<tr>
+<td><code>enum</code></td>
+<td>必需</td>
+<td></td>
+<td>枚举值:</td>
+</tr>
+<tr>
+<td><code>sora-2</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>sora-2-hd</code></td>
+<td></td>
+<td></td>
+<td>示例:</td>
+</tr>
+<tr>
+<td><code>sora-2</code></td>
+<td>prompt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>画面动起来</td>
+<td>必需</td>
+<td></td>
+</tr>
+<tr>
+<td><code>seconds</code></td>
+<td>string</td>
+<td></td>
+<td>10 可选</td>
+</tr>
+<tr>
+<td><code>input_reference</code></td>
+<td>string</td>
+<td>可选</td>
+<td>示例: file:///Users/xiangsx/Downloads/RHTtTcBrlY5wGxop9ux8DqRckyIKxd.png</td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>string</td>
+<td>可选</td>
+<td>宽x高，会忽略具体数据 宽&gt;高 为横屏，宽&lt;高为竖屏 枚举值: 1024x1792</td>
+</tr>
+<tr>
+<td><code>enum</code></td>
+<td></td>
+<td></td>
+<td>高清竖屏仅 sora-2-pro 可用 1792x1024 高清横屏仅 sora-2-pro 可用 720x1280 标清竖屏 1280x720 标清横屏 示例: 16x9</td>
+</tr>
+<tr>
+<td><code>watermark</code></td>
+<td>string</td>
+<td>可选</td>
+<td>是否需要水印，不传默认无水印 示例:</td>
+</tr>
+<tr>
+<td><code>true</code></td>
+<td>private</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td>是否隐藏视频，true-视频不会发布，同时视频无法进行 remix(二次编辑)， 默认为 false 示例:</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td>character_url</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>可选</td>
+<td></td>
+<td>创建角色需要的视频链接，注意视频中一定不能出现真人，否则会失败 示例: https://filesystem.site/cdn/20251030/javYrU4etHVFDqg8by7mViTWHlMOZy.mp4</td>
+</tr>
+<tr>
+<td><code>character_timestamps</code></td>
+<td>string</td>
+<td>可选</td>
+<td>视频角色出现的秒数范围，格式 {start},{end}, 注意 end-start 的范围 1～3秒 示例: 1,3</td>
+</tr>
+<tr>
+<td><code>character_from_task</code></td>
+<td>string</td>
+<td>可选</td>
+<td>已完成的任务 id,可以根据已经生成的任务 id，来创建角色</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">返回响应<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 
 
 

@@ -5205,6 +5205,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6690,6 +6718,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6721,26 +6777,52 @@
 
 
 <h1 id="_1">获取视频任务状态<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>当使用此接口后。并没有返回视频链接，可以使用下面的转存视频接口进行视频下载</p>
 <h2 id="_2">请求参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Authorization在 Header 添加参数 Authorization，其值为在 Bearer 之后拼接 Token示例：<code>Authorization: Bearer ********************</code>Path 参数生成代码idstring 必需示例:sora-2:task_01k770gx3je7dtxwmmph7efpcwHeader 参数生成代码Authorizationstring 必需默认值:
-{{Authorization}}</p>
-<p>Body 参数application/json必填生成代码Authorizationstring 可选在 Header 添加参数 Authorization，其值为在 Bearer 之后拼接 Token
-示例：
-Authorization: Bearer <strong><em>*</em></strong><strong><em>*</em></strong><strong>*</strong>*</p>
-<p>示例</p>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>默认值: {{Authorization}}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>必填</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>可选</td>
+<td>在 Header 添加参数 Authorization，其值为在 Bearer 之后拼接 Token 示例： Authorization: Bearer <strong><em>*</em></strong><strong><em>*</em></strong><strong>*</strong>* 示例</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_3">返回响应<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码object 请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request GET &#39;https://4sapi.com/v1/videos/sora-2:task_01k770gx3je7dtxwmmph7efpcw&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Authorization: Bearer &#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Content-Type: application/json&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--data-raw &#39;{
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &quot;Authorization&quot;: &quot;string&quot;
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>}&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{}
-</code></pre></div></p>
 
 
 

@@ -3564,6 +3564,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6690,6 +6718,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="请求参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Body 参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6721,32 +6777,136 @@
 
 
 <h1 id="describe">图生文（Describe）<a class="headerlink" href="#describe" title="Permanent link">&para;</a></h1>
-<p>执行Describe操作，提交图生文任务。</p>
 <h2 id="_1">请求参数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Header 参数生成代码Acceptstring 必需示例:application/jsonAuthorizationstring 必需示例:sk-Content-Typestring 必需示例:application/jsonBody 参数application/json必填生成代码botTypestring 可选base64string 图片base64必需dimensionsstring 必需比例: PORTRAIT(2:3); SQUARE(1:1); LANDSCAPE(3:2)
-枚举值:PORTRAIT SQUARE LANDSCAPE
-示例值:SQUARE</p>
-<p>accountFilterobject 可选channelIdstring 频道ID可选instanceIdstring 账号实例ID可选modesarray[string]账号模式必需remarkstring 备注可选remixstring 账号是否remix可选remixAutoConsideredboolean 可选账号过滤时，remix自动提交 视为 账号的remix为false</p>
-<p>notifyHookstring 可选statestring 可选示例</p>
+<h3 id="header">Header 参数<a class="headerlink" href="#header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Accept</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: application/json</td>
+</tr>
+<tr>
+<td><code>Authorization</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例:</td>
+</tr>
+<tr>
+<td><code>sk-</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td>string</td>
+<td>必需</td>
+<td>示例: application/json</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body">Body 参数<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必需</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>必填</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>botType</code></td>
+<td>string</td>
+<td>可选</td>
+<td></td>
+</tr>
+<tr>
+<td><code>base64</code></td>
+<td>string</td>
+<td></td>
+<td>图片base64 必需</td>
+</tr>
+<tr>
+<td><code>dimensions</code></td>
+<td>string</td>
+<td>必需</td>
+<td>比例: PORTRAIT(2:3); SQUARE(1:1); LANDSCAPE(3:2) 枚举值:PORTRAIT SQUARE LANDSCAPE 示例值:SQUARE</td>
+</tr>
+<tr>
+<td><code>accountFilter</code></td>
+<td>object</td>
+<td>可选</td>
+<td></td>
+</tr>
+<tr>
+<td><code>channelId</code></td>
+<td>string</td>
+<td></td>
+<td>频道ID 可选</td>
+</tr>
+<tr>
+<td><code>instanceId</code></td>
+<td>string</td>
+<td></td>
+<td>账号实例ID 可选</td>
+</tr>
+<tr>
+<td><code>modes</code></td>
+<td></td>
+<td></td>
+<td>array[string] 账号模式 必需</td>
+</tr>
+<tr>
+<td><code>remark</code></td>
+<td>string</td>
+<td></td>
+<td>备注 可选</td>
+</tr>
+<tr>
+<td><code>remix</code></td>
+<td>string</td>
+<td></td>
+<td>账号是否remix 可选</td>
+</tr>
+<tr>
+<td><code>remixAutoConsidered</code></td>
+<td>boolean</td>
+<td>可选</td>
+<td>账号过滤时，remix自动提交 视为 账号的remix为false</td>
+</tr>
+<tr>
+<td><code>notifyHook</code></td>
+<td>string</td>
+<td>可选</td>
+<td></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td>可选</td>
+<td>示例</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_2">返回响应<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>🟢200成功application/json生成代码Body生成代码codeinteger 可选descriptionstring 可选propertiesobject 可选resultstring 可选请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://4sapi.com/mj/submit/describe&#39; \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Accept: application/json&#39; \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Authorization: sk-&#39; \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--header &#39;Content-Type: application/json&#39; \
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--data-raw &#39;{
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;mode&quot;: &quot;RELAX&quot;,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &quot;base64&quot;: &quot;data:image/png;base64,xxx&quot;
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>}&#39;
-</code></pre></div>
-响应示例响应示例
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;code&quot;: 1,
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;description&quot;: &quot;提交成功&quot;,
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;properties&quot;: {},
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;result&quot;: 1320098173412546
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>}
-</code></pre></div></p>
 
 
 
