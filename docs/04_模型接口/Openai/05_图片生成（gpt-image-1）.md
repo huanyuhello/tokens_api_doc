@@ -1,58 +1,27 @@
 # 图片生成（gpt-image-1）
 
-根据提示词以及其他参数创建图片
-官方文档：[https://platform.openai.com/docs/api-reference/images/create](https://platform.openai.com/docs/api-reference/images/create)
-❗️ 注意事项：
-还在世的艺术家名称（如「宫崎骏」、「新海诚」等）会触发 moderation_blocked 报错，导致生成失败。你可以通过「吉卜力」、「明亮的现代日式动漫风格」等非敏感词来规避。衣着暴露或含有暗示的图片同理。
-总的来说,「风格」比「艺术家」安全，像是「皮克斯」也是支持的。
-更稳妥的做法是采用已故艺术家或对应的风格，如「梵高」、「蒙娜丽莎」等。
-对于单次请求生成 2-10 张图片的情况，如果系统检测到请求涉嫌违反平台政策，该请求中的违规部分将不会被生成。这可能导致实际生成图片数量少于用户请求数量，然而多图的情况下，不会抛出 moderation_blocked。 因此，请在创作中主动规避潜在的知识产权（IP）或版权问题，以减少生成被系统拦截的风险，确保创作顺利完成。
-✍️ 关键提示：
-避免直接使用已知的受版权保护角色、品牌标志、名人肖像等
-可以采用「风格借鉴」「创意改编」「泛指描述」等方式表达
-若需引用特定元素，请提前确认该元素是否处于公有领域
-✍️ 实用提示
-支持任何语言，中文绘制也很稳定，但我们也不建议绘制大量的文本
-size 参数不支持显示传入 size=“auto”，默认即 auto
-画幅比例可以在 prompt 中指定，支持 2:3、3:2、1:1，也可以在 size 参数中设置。
-支持控制敏感度的 moderation 参数，但这个参数设为 low 也可能被拒，比如说维纳斯过于暴露
-edits 端口不支持 moderation 参数
-文本描述和参考图搭配，融图效果更准确
-上传的图片可以做压缩预处理，提升速度
-支持透明背景，免抠图。——只需要在 Prompt 中补充要求
 
 ## 请求参数
-Header 参数生成代码Acceptstring 必需示例:application/jsonAuthorizationstring 必需示例:sk-Content-Typestring 必需示例:application/jsonBody 参数application/json生成代码modelstring 必需要使用的模型的 ID。有关哪些模型适用于聊天 API 的详细信息
 
-promptstring 必需所需图像的文本描述。最大长度为 1000 个字符。
 
-nstring 可选要生成的图像数。必须介于 1 和 10 之间。
+### Header 参数
 
-sizestring 可选生成图像的大小。必须是256x256、512x512或 1024x1024之一。
+| 参数名 | 类型 | 必需 | 描述 |
+|--------|------|------|------|
+| `Accept` | string | 必需 | 示例: application/json |
+| `Authorization` | string | 必需 | 示例: |
+| `sk-` |  |  |  |
+| `Content-Type` | string | 必需 | 示例: application/json |
 
-示例
+
+### Body 参数
+
+| 参数名 | 类型 | 必需 | 描述 |
+|--------|------|------|------|
+| `model` | string | 必需 | 要使用的模型的 ID。有关哪些模型适用于聊天 API 的详细信息 |
+| `prompt` | string | 必需 | 所需图像的文本描述。最大长度为 1000 个字符。 |
+| `n` | string | 可选 | 要生成的图像数。必须介于 1 和 10 之间。 |
+| `size` | string | 可选 | 生成图像的大小。必须是256x256、512x512或 1024x1024之一。 示例 |
+
+
 ## 返回响应
-🟢200成功application/json生成代码Body生成代码createdinteger 必需dataarray[string]必需请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-```
-curl --location --request POST 'https://4sapi.com/v1/images/generations' \
---header 'Accept: application/json' \
---header 'Authorization: sk-' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "model": "gpt-image-1",
-    "prompt": "a white siamese cat",
-    "n": 1,
-    "size": "1024x1024"
-}'
-```
-响应示例响应示例
-```
-{
-    "created": 1713833628,
-    "data": [
-        {
-            "b64_json": "..."
-        }
-    ]
-}
-```
