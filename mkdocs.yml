@@ -1,0 +1,243 @@
+site_name: 4sAPI 文档
+site_description: 4sAPI 接口文档 - 大模型 API 中转服务
+site_url: ""
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+- 首页: index.md
+- 基础文档:
+  - 价格-充值-分组-模型价格介绍: 01_基础文档/价格-充值-分组-模型价格介绍.md
+- FAQ 常见问题:
+  - 入门必看:
+    - 我注册并且充值了key在哪: 02_FAQ常见问题/入门必看/01_我注册并且充值了key在哪.md
+    - 如何充值: 02_FAQ常见问题/入门必看/02_如何充值.md
+    - 可以使用哪些大模型API: 02_FAQ常见问题/入门必看/03_可以使用哪些大模型API.md
+    - 如何获取OpenAI Claude Gemini Key: 02_FAQ常见问题/入门必看/04_如何获取OpenAI_Claude_Gemini_Key.md
+    - 怎么更换模型使用: 02_FAQ常见问题/入门必看/05_怎么更换模型使用.md
+    - 接口在中国大陆能使用吗: 02_FAQ常见问题/入门必看/06_接口在中国大陆能使用吗.md
+    - 按量计费还是按月支付: 02_FAQ常见问题/入门必看/07_按量计费还是按月支付.md
+    - 配置模型的时候URL用哪个: 02_FAQ常见问题/入门必看/08_配置模型的时候URL用哪个.md
+    - 怎么检查一次调用消耗了多少Token: 02_FAQ常见问题/入门必看/09_怎么检查一次调用消耗了多少Token.md
+    - 请问我余额为负了怎么回事: 02_FAQ常见问题/入门必看/10_请问我余额为负了怎么回事.md
+  - 常见误区:
+    - 明明余额还有很多为什么显示令牌无法使用: 02_FAQ常见问题/常见误区/01_明明余额还有很多为什么显示令牌无法使用.md
+    - Key为什么不能用 为什么我调用API没反应: 02_FAQ常见问题/常见误区/02_Key为什么不能用_为什么我调用API没反应.md
+    - 新建令牌参数怎么填: 02_FAQ常见问题/常见误区/03_新建令牌参数怎么填.md
+    - 为什么调用接口返回无效的令牌: 02_FAQ常见问题/常见误区/04_为什么调用接口返回无效的令牌.md
+    - API接口返回报错代码含义: 02_FAQ常见问题/常见误区/05_API接口返回报错代码含义.md
+  - 问题自查方法: 02_FAQ常见问题/问题自查方法.md
+- 软件/插件配置教程:
+  - Claude Desktop配置4SAPI教程: 03_软件插件配置教程/Claude_Desktop配置4SAPI教程.md
+  - Coze配置使用4SAPI教程: 03_软件插件配置教程/Coze配置使用4SAPI教程.md
+  - Cursor接入4sapi教程: 03_软件插件配置教程/Cursor接入4sapi教程.md
+  - Dify配置使用4sAPI教程: 03_软件插件配置教程/Dify配置使用4sAPI教程.md
+  - GPT-codex安装教程: 03_软件插件配置教程/GPT-codex安装教程.md
+  - Hermes Agent linux安装接入4sapi教程: 03_软件插件配置教程/Hermes_Agent_linux安装接入4sapi教程.md
+  - OpenClaw接入API教程: 03_软件插件配置教程/OpenClaw接入API教程.md
+  - Trae配置使用API教程: 03_软件插件配置教程/Trae配置使用API教程.md
+  - WorkBuddy接入4sapi教程: 03_软件插件配置教程/WorkBuddy接入4sapi教程.md
+  - cc switch使用教程: 03_软件插件配置教程/cc_switch使用教程.md
+  - claudecode安装教程 win mac: 03_软件插件配置教程/claudecode安装教程_win_mac.md
+  - gemini cli配置教程: 03_软件插件配置教程/gemini_cli配置教程.md
+  - n8n配置使用4sapi教程: 03_软件插件配置教程/n8n配置使用4sapi教程.md
+  - open claw在云服务器linux环境下通过终端配置api: 03_软件插件配置教程/open_claw在云服务器linux环境下通过终端配置api.md
+  - opencode接入api教程: 03_软件插件配置教程/opencode接入api教程.md
+  - vscode接入4sapi教程: 03_软件插件配置教程/vscode接入4sapi教程.md
+  - 接入Cherry Studio: 03_软件插件配置教程/接入Cherry_Studio.md
+  - 接入chatbox: 03_软件插件配置教程/接入chatbox.md
+  - 腾讯云openclaw接入4sapi教程: 03_软件插件配置教程/腾讯云openclaw接入4sapi教程.md
+- 模型接口:
+  - 3D 模型:
+    - Hunyuan3D-2: 04_模型接口/3D模型/01_Hunyuan3D-2.md
+  - Anthropic OpenAI 兼容接口:
+    - 文本生成: 04_模型接口/Anthropic_OpenAI兼容接口/01_文本生成.md
+    - 图片理解: 04_模型接口/Anthropic_OpenAI兼容接口/02_图片理解.md
+    - 文本生成 强制返回思考: 04_模型接口/Anthropic_OpenAI兼容接口/03_文本生成_强制返回思考.md
+    - 函数调用: 04_模型接口/Anthropic_OpenAI兼容接口/04_函数调用.md
+    - Web search 联网搜索: 04_模型接口/Anthropic_OpenAI兼容接口/05_Web_search_联网搜索.md
+  - Anthropic 原生接口:
+    - 文本生成 思考配置: 04_模型接口/Anthropic_原生接口/01_文本生成_思考配置.md
+    - 图片理解: 04_模型接口/Anthropic_原生接口/02_图片理解.md
+    - 文本生成: 04_模型接口/Anthropic_原生接口/03_文本生成.md
+    - 文本生成 强制返回思考: 04_模型接口/Anthropic_原生接口/04_文本生成_强制返回思考.md
+    - 函数调用: 04_模型接口/Anthropic_原生接口/05_函数调用.md
+    - Web search 联网搜索: 04_模型接口/Anthropic_原生接口/06_Web_search_联网搜索.md
+  - FLUX 文生图:
+    - fal-ai nano-banana 文生图: 04_模型接口/FLUX_文生图/01_fal-ai_nano-banana_文生图.md
+    - fal-ai nano-banana edit 图片编辑: 04_模型接口/FLUX_文生图/02_fal-ai_nano-banana_edit_图片编辑.md
+    - flux OpenAI兼容接口: 04_模型接口/FLUX_文生图/03_flux_OpenAI兼容接口.md
+    - flux-kontext-pro OpenAI兼容接口: 04_模型接口/FLUX_文生图/04_flux-kontext-pro_OpenAI兼容接口.md
+    - stable-diffusion OpenAI兼容接口: 04_模型接口/FLUX_文生图/05_stable-diffusion_OpenAI兼容接口.md
+    - ideogram OpenAI兼容接口: 04_模型接口/FLUX_文生图/06_ideogram_OpenAI兼容接口.md
+    - recraftv3 OpenAI兼容接口: 04_模型接口/FLUX_文生图/07_recraftv3_OpenAI兼容接口.md
+    - flux携带参考图 OpenAI兼容接口: 04_模型接口/FLUX_文生图/08_flux携带参考图_OpenAI兼容接口.md
+  - Google Gemini 原生接口:
+    - 文本生成: 04_模型接口/Google_Gemini原生接口/01_文本生成.md
+    - 文字转语音: 04_模型接口/Google_Gemini原生接口/02_文字转语音.md
+    - 音频转文: 04_模型接口/Google_Gemini原生接口/03_音频转文.md
+    - 视频转文: 04_模型接口/Google_Gemini原生接口/04_视频转文.md
+    - 图片理解: 04_模型接口/Google_Gemini原生接口/05_图片理解.md
+    - 文生图片（nanobanana pro）: 04_模型接口/Google_Gemini原生接口/06_文生图片（nanobanana_pro）.md
+    - 图片编辑（nanobanana）: 04_模型接口/Google_Gemini原生接口/07_图片编辑（nanobanana）.md
+    - 图片编辑（nanobanana pro）: 04_模型接口/Google_Gemini原生接口/08_图片编辑（nanobanana_pro）.md
+  - Google OpenAI 兼容接口:
+    - 文本生成: 04_模型接口/Google_OpenAI兼容接口/01_文本生成.md
+    - 文本生成 强制返回思考: 04_模型接口/Google_OpenAI兼容接口/02_文本生成_强制返回思考.md
+    - 图片理解: 04_模型接口/Google_OpenAI兼容接口/03_图片理解.md
+    - 图片生成: 04_模型接口/Google_OpenAI兼容接口/04_图片生成.md
+    - 图片修改: 04_模型接口/Google_OpenAI兼容接口/05_图片修改.md
+    - 图片生成 Imagen 4: 04_模型接口/Google_OpenAI兼容接口/06_图片生成_Imagen_4.md
+    - 音频理解: 04_模型接口/Google_OpenAI兼容接口/07_音频理解.md
+    - 视频理解: 04_模型接口/Google_OpenAI兼容接口/08_视频理解.md
+    - 文本转语音 TTS: 04_模型接口/Google_OpenAI兼容接口/09_文本转语音_TTS.md
+    - 图片编辑（Nano-banana）: 04_模型接口/Google_OpenAI兼容接口/10_图片编辑（Nano-banana）.md
+    - 图片编辑（Nano-banana） base64格式: 04_模型接口/Google_OpenAI兼容接口/11_图片编辑（Nano-banana）_base64格式.md
+  - Midjourney:
+    - MJ视频 chat格式: 04_模型接口/Midjourney/01_MJ视频_chat格式.md
+    - 文生图（Imagine）: 04_模型接口/Midjourney/02_文生图（Imagine）.md
+    - 图片融合（Blend）: 04_模型接口/Midjourney/03_图片融合（Blend）.md
+    - 按钮点击（Action）: 04_模型接口/Midjourney/04_按钮点击（Action）.md
+    - 窗口执行（Modal）: 04_模型接口/Midjourney/05_窗口执行（Modal）.md
+    - 生成视频（Video）: 04_模型接口/Midjourney/06_生成视频（Video）.md
+    - 图生文（Describe）: 04_模型接口/Midjourney/07_图生文（Describe）.md
+    - 编辑图片（Edit）: 04_模型接口/Midjourney/08_编辑图片（Edit）.md
+    - 上传（upload）: 04_模型接口/Midjourney/09_上传（upload）.md
+    - 换脸（FaceSwap）: 04_模型接口/Midjourney/10_换脸（FaceSwap）.md
+    - 缩短提示词（Shorten）: 04_模型接口/Midjourney/11_缩短提示词（Shorten）.md
+    - 查询: 04_模型接口/Midjourney/12_查询.md
+    - 获取种子（Seed）接口: 04_模型接口/Midjourney/13_获取种子（Seed）接口.md
+    - 批量查询: 04_模型接口/Midjourney/14_批量查询.md
+    - 文生图 OpenAI兼容: 04_模型接口/Midjourney/15_文生图_OpenAI兼容.md
+  - OpenAI:
+    - 文本生成: 04_模型接口/Openai/01_文本生成.md
+    - 文本生成---上下文阅读: 04_模型接口/Openai/02_文本生成---上下文阅读.md
+    - 图片理解: 04_模型接口/Openai/03_图片理解.md
+    - 图片生成（gpt-image-2）: 04_模型接口/Openai/04_图片生成（gpt-image-2）.md
+    - 图片生成（gpt-image-1）: 04_模型接口/Openai/05_图片生成（gpt-image-1）.md
+    - 图片编辑 edits: 04_模型接口/Openai/06_图片编辑_edits.md
+    - 图片编辑 网页版: 04_模型接口/Openai/07_图片编辑_网页版.md
+    - 函数调用 tools: 04_模型接口/Openai/08_函数调用_tools.md
+    - v1 Responses 通用: 04_模型接口/Openai/09_v1_Responses_通用.md
+    - 创建文本嵌入: 04_模型接口/Openai/10_创建文本嵌入.md
+    - 批量创建嵌入: 04_模型接口/Openai/11_批量创建嵌入.md
+    - 文本转语音 TTS: 04_模型接口/Openai/12_文本转语音_TTS.md
+    - 语音转文本 whisper-1: 04_模型接口/Openai/13_语音转文本_whisper-1.md
+    - 语音转文本 gpt-4o-transcribe: 04_模型接口/Openai/14_语音转文本_gpt-4o-transcribe.md
+    - 音频翻译: 04_模型接口/Openai/15_音频翻译.md
+    - Audio接口 输出: 04_模型接口/Openai/16_Audio接口_输出.md
+    - Audio接口 输入: 04_模型接口/Openai/17_Audio接口_输入.md
+    - 内容补全接口: 04_模型接口/Openai/18_内容补全接口.md
+    - 创建内容审核: 04_模型接口/Openai/19_创建内容审核.md
+    - PDF文件分析: 04_模型接口/Openai/20_PDF文件分析.md
+    - deep-research 深度研究: 04_模型接口/Openai/21_deep-research_深度研究.md
+    - Web search 联网搜索: 04_模型接口/Openai/22_Web_search_联网搜索.md
+    - response format: 04_模型接口/Openai/23_response_format.md
+    - 图像编辑（gpt-image-2）: 04_模型接口/Openai/24_图像编辑（gpt-image-2）.md
+  - Suno:
+    - 场景一 stems声曲分离: 04_模型接口/Suno/01_场景一_stems声曲分离.md
+    - 生成歌曲: 04_模型接口/Suno/02_生成歌曲.md
+    - 生成歌词: 04_模型接口/Suno/03_生成歌词.md
+    - 查询任务状态（批量）: 04_模型接口/Suno/04_查询任务状态（批量）.md
+    - 查询任务状态（单个）: 04_模型接口/Suno/05_查询任务状态（单个）.md
+  - Sora 其他格式:
+    - 创建绘画 chat格式: 04_模型接口/sora_其他格式/01_创建绘画_chat格式.md
+    - 创建角色: 04_模型接口/sora_其他格式/02_创建角色.md
+    - Flux Dalle3 Edits 图生图 文生图: 04_模型接口/sora_其他格式/03_Flux_Dalle3_Edits_图生图_文生图.md
+    - Flux 创建 OpenAI dall-e-3格式: 04_模型接口/sora_其他格式/04_Flux_创建_OpenAI_dall-e-3格式.md
+  - Sora 官方异步格式:
+    - 创建视频任务: 04_模型接口/sora_官方异步格式/01_创建视频任务.md
+    - 获取视频任务状态: 04_模型接口/sora_官方异步格式/02_获取视频任务状态.md
+    - 编辑视频 remix: 04_模型接口/sora_官方异步格式/03_编辑视频_remix.md
+    - 获取视频内容: 04_模型接口/sora_官方异步格式/04_获取视频内容.md
+  - Sora 渠道异步格式:
+    - 创建视频任务: 04_模型接口/sora_渠道异步格式/01_创建视频任务.md
+    - 获取视频任务状态: 04_模型接口/sora_渠道异步格式/02_获取视频任务状态.md
+    - 转存视频: 04_模型接口/sora_渠道异步格式/03_转存视频.md
+    - 创建视频 带Character: 04_模型接口/sora_渠道异步格式/04_创建视频_带Character.md
+    - 编辑视频 remix: 04_模型接口/sora_渠道异步格式/05_编辑视频_remix.md
+    - 获取视频内容: 04_模型接口/sora_渠道异步格式/06_获取视频内容.md
+    - 创建视频任务 Copy: 04_模型接口/sora_渠道异步格式/07_创建视频任务_Copy.md
+    - 从已生成的任务中创建角色: 04_模型接口/sora_渠道异步格式/08_从已生成的任务中创建角色.md
+    - 使用故事板创建视频: 04_模型接口/sora_渠道异步格式/09_使用故事板创建视频.md
+  - veo 视频生成:
+    - 图生视频: 04_模型接口/veo视频生成/01_图生视频.md
+    - 文生视频: 04_模型接口/veo视频生成/02_文生视频.md
+    - 查询视频生成状态: 04_模型接口/veo视频生成/03_查询视频生成状态.md
+    - 图生视频（chat格式）: 04_模型接口/veo视频生成/04_图生视频（chat格式）.md
+  - 豆包:
+    - doubao-seedream-4-0-文生图: 04_模型接口/豆包/01_doubao-seedream-4-0-文生图.md
+    - doubao-seedream-4-0-图生图: 04_模型接口/豆包/02_doubao-seedream-4-0-图生图.md
+    - doubao-seedream-4-0-多图生图: 04_模型接口/豆包/03_doubao-seedream-4-0-多图生图.md
+- 个人 API 接口文档:
+  - 获取个人token: 05_个人API接口文档/00_获取个人token.md
+  - 个人信息:
+    - 获取个人信息: 05_个人API接口文档/一_个人信息/01_获取个人信息.md
+    - 修改个人信息: 05_个人API接口文档/一_个人信息/02_修改个人信息.md
+    - 注销账户: 05_个人API接口文档/一_个人信息/03_注销账户.md
+    - 获取可用模型列表: 05_个人API接口文档/一_个人信息/04_获取可用模型列表.md
+    - 获取用户分组: 05_个人API接口文档/一_个人信息/05_获取用户分组.md
+    - 更新用户设置 额度预警等: 05_个人API接口文档/一_个人信息/06_更新用户设置_额度预警等.md
+    - 生成系统访问令牌: 05_个人API接口文档/一_个人信息/07_生成系统访问令牌.md
+  - 日志与统计:
+    - 查看个人使用日志: 05_个人API接口文档/三_日志与统计/01_查看个人使用日志.md
+    - 个人日志统计: 05_个人API接口文档/三_日志与统计/02_个人日志统计.md
+    - 令牌每日消耗: 05_个人API接口文档/三_日志与统计/03_令牌每日消耗.md
+    - 令牌模型消耗预览 Top3: 05_个人API接口文档/三_日志与统计/04_令牌模型消耗预览_Top3.md
+    - 令牌全量模型消耗: 05_个人API接口文档/三_日志与统计/05_令牌全量模型消耗.md
+    - 导出令牌每日消耗 XLSX: 05_个人API接口文档/三_日志与统计/06_导出令牌每日消耗_XLSX.md
+    - 个人额度时序数据: 05_个人API接口文档/三_日志与统计/07_个人额度时序数据.md
+  - 令牌管理 (API Key):
+    - 获取令牌列表: 05_个人API接口文档/二_令牌管理_API_Key/01_获取令牌列表.md
+    - 搜索令牌: 05_个人API接口文档/二_令牌管理_API_Key/02_搜索令牌.md
+    - 获取单个令牌: 05_个人API接口文档/二_令牌管理_API_Key/03_获取单个令牌.md
+    - 创建令牌: 05_个人API接口文档/二_令牌管理_API_Key/04_创建令牌.md
+    - 更新令牌: 05_个人API接口文档/二_令牌管理_API_Key/05_更新令牌.md
+    - 删除令牌: 05_个人API接口文档/二_令牌管理_API_Key/06_删除令牌.md
+    - 批量删除令牌: 05_个人API接口文档/二_令牌管理_API_Key/07_批量删除令牌.md
+    - 获取单个令牌 明文显示: 05_个人API接口文档/二_令牌管理_API_Key/08_获取单个令牌_明文显示.md
