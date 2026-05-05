@@ -1,7 +1,7 @@
 # claudecode安装#
 前置条件：
 
-一个4sapi claudecoded的 [密钥/令牌（key）](http://47.102.134.41:3000)
+一个Tokens claudecoded的 [密钥/令牌（key）](http://47.102.134.41:3000)
 
 已安装 Node.js
 

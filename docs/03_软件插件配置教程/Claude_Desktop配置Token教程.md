@@ -1,4 +1,4 @@
-# Claude Desktop 配置 4SAPI 教程（测试中）
+# Claude Desktop 配置 Tokens 教程（测试中）
 
 ⚠️ 重要前提（必须看）
 必须使用最新版 Claude Desktop：低版本可能没有开发者模式或第三方推理配置入口。

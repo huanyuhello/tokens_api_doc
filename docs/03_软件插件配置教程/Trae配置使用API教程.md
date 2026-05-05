@@ -2,7 +2,7 @@
 
 **Trae** 是一款强大的、由 AI 驱动的集成开发环境 (IDE)，它基于 VS Code 构建，如果你用过 VS Code，会对 Trae 的界面感到非常熟悉。
 
-本教程主要通过安装并配置 **Trae** 中的 Cline 插件，以接入 4sapi平台提供的 API。
+本教程主要通过安装并配置 **Trae** 中的 Cline 插件，以接入 Tokens平台提供的 API。
 
 **Trae** 官方下载地址：[https://www.trae.cn/](https://www.trae.cn/)
 
@@ -21,7 +21,7 @@
 
 ```
 Base URL：http://47.102.134.41:3000/v1 
-API Key：sk-xxx（你的 4sapi 平台令牌密钥）
+API Key：sk-xxx（你的 Tokens 平台令牌密钥）
 ```
 2.在 Model ID 中，可以选择或输入希望使用的模型名称，例如 gpt-5.2，然后保存完成。
 

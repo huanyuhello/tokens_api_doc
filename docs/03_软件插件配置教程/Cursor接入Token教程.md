@@ -1,8 +1,8 @@
-# Cursor接入4sapi教程
+# Cursor接入Tokens教程
 
 前置条件：
 
-一个4sapi claudecode的令牌key [http://47.102.134.41:3000](http://47.102.134.41:3000)
+一个Tokens claudecode的令牌key [http://47.102.134.41:3000](http://47.102.134.41:3000)
 
 **安装 Claude Code：**
 要安装 Claude Code，请按以下两个流程进行:

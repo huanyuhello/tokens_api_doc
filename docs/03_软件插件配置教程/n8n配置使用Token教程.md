@@ -1,4 +1,4 @@
-# n8n配置使用4sapi教程
+# n8n配置使用Tokens教程
 
 **一.添加账户凭证**
 1.在n8n中点击overview，再点击Credential

@@ -9,5 +9,5 @@
 **填入url key 模型id**
 
 `在用户的根目录下
-root@4sapi:~/.hermes# cd 
-root@4sapi:~# source ~/.bashrc  //加载环境变量`
+root@Tokens:~/.hermes# cd 
+root@Tokens:~# source ~/.bashrc  //加载环境变量`
