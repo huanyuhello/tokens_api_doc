@@ -1,7 +1,7 @@
 # claudecode安装#
 前置条件：
 
-一个4sapi claudecoded的 [密钥/令牌（key）](https://4sapi.com)
+一个4sapi claudecoded的 [密钥/令牌（key）](http://47.102.134.41:3000)
 
 已安装 Node.js
 
@@ -22,7 +22,7 @@ npm install -g @anthropic-ai/claude-code
 {
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "sk-hUOgVOGw0qdyk*****************",
-    "ANTHROPIC_BASE_URL": "https://4sapi.com",
+    "ANTHROPIC_BASE_URL": "http://47.102.134.41:3000",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-opus-4-6",
@@ -47,7 +47,7 @@ setx ANTHROPIC_AUTH_TOKEN "sk-..."
 设置第二个变量
 
 ```
-setx ANTHROPIC_BASE_URL "https://4sapi.com"
+setx ANTHROPIC_BASE_URL "http://47.102.134.41:3000"
 ```
 
 重要：设置完成后，你需要关闭所有已经打开的CMD或PowerShell窗口，然后重新打开一个新的窗口，这样新的环境变量才会生效。
@@ -69,11 +69,11 @@ ANTHROPIC_AUTH_TOKEN
 sk-...
 ```
 
-重复步骤3添加第二个变量再次点击“新建(N)...”。变量名(N): ANTHROPIC_BASE_URL变量值(V): [https://4sapi.com点击“确定”。](https://4sapi.com点击“确定”。)
+重复步骤3添加第二个变量再次点击“新建(N)...”。变量名(N): ANTHROPIC_BASE_URL变量值(V): [http://47.102.134.41:3000点击“确定”。](http://47.102.134.41:3000点击“确定”。)
 
 ```
 ANTHROPIC_BASE_URL
-https://4sapi.com
+http://47.102.134.41:3000
 ```
 
 保存并关闭在“环境变量”窗口点击“确定”。在“系统属性”窗口点击“确定”。

@@ -2,7 +2,7 @@
 
 前置条件：
 
-一个4sapi claudecode的令牌key [https://4sapi.com](https://4sapi.com)
+一个4sapi claudecode的令牌key [http://47.102.134.41:3000](http://47.102.134.41:3000)
 
 **安装 Claude Code：**
 要安装 Claude Code，请按以下两个流程进行:
@@ -19,7 +19,7 @@ npm install -g @anthropic-ai/claude-code
 {
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "sk-hUOgVOGw0qdyk*****************",
-    "ANTHROPIC_BASE_URL": "https://4sapi.com",
+    "ANTHROPIC_BASE_URL": "http://47.102.134.41:3000",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-opus-4-6",

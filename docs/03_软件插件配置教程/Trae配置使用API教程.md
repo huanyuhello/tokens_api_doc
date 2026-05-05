@@ -20,7 +20,7 @@
 1.点击 **Trae** 左侧活动栏的 **Cline** 图标，在其设置界面中填写配置信息，如下图所示。
 
 ```
-Base URL：https://4sapi.com/v1 
+Base URL：http://47.102.134.41:3000/v1 
 API Key：sk-xxx（你的 4sapi 平台令牌密钥）
 ```
 2.在 Model ID 中，可以选择或输入希望使用的模型名称，例如 gpt-5.2，然后保存完成。

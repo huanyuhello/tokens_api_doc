@@ -26,7 +26,7 @@ Use this configuration：打开开关，必须开启。
 
 Gateway：选择 Anthropic-compatible。
 
-Gateway base URL：[https://4sapi.com](https://4sapi.com)
+Gateway base URL：[http://47.102.134.41:3000](http://47.102.134.41:3000)
 
 Gateway API key：粘贴你的 API Key，也就是控制台的令牌管理复制出来的那串密钥。
 

@@ -25,7 +25,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 在4spi网站创建令牌，如果已有令牌要检查分组与你要调用的模型是否匹配
 
 填写URL并粘贴刚才上面令牌的key
-**注意**：URL使用：[https://4sapi.com](https://4sapi.com)  或者[https://4sapi.com/v1](https://4sapi.com/v1)
+**注意**：URL使用：[http://47.102.134.41:3000](http://47.102.134.41:3000)  或者[http://47.102.134.41:3000/v1](http://47.102.134.41:3000/v1)
 
 兼容的端点选择要注意，除了claude选择第二个，其他一般选择Open AI兼容
 

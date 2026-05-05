@@ -13,7 +13,7 @@
 n1n 平台接口地址：
 
 ```
-API endpoint URL：https://4sapi.com 或者 https://4sapi.com/v1
+API endpoint URL：http://47.102.134.41:3000 或者 http://47.102.134.41:3000/v1
 ```
 示例如下所示：
 
