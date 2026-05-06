@@ -1,13 +1,43 @@
-## 1、什么是hermes agent#
-`Hermes Agent 是 Nous Research 开发的开源自主 AI 智能体，于 2026 年 2 月发布。它不是绑定在 IDE 上的代码补全工具，也不是套壳聊天机器人——它住在你的服务器上，记住它学到的一切，运行越久能力越强。支持 Linux、macOS 和 WSL2，一条 curl 命令即可安装，无需任何前置依赖。`
+# Hermes Agent Linux 安装接入 Tokens 教程
 
-## 2、hermes agent快速上手#
-`linux 安装命令： curl -fsSL https://res1.hermesagent.org.cn/install.sh | bash`
+## Hermes Agent 简介
 
-**因为我此前已经配置过一个了，所以我选择了29，一般的是选择28 Custom endpoint。**
+Hermes Agent 是 Nous Research 开发的开源自主 AI 智能体，支持 Linux、macOS 和 WSL2，运行越久能力越强。一条命令即可安装，无需前置依赖。
 
-**填入url key 模型id**
+---
 
-`在用户的根目录下
-root@Tokens:~/.hermes# cd 
-root@Tokens:~# source ~/.bashrc  //加载环境变量`
+## 第一步：安装 Hermes Agent
+
+```bash
+curl -fsSL https://res1.hermesagent.org.cn/install.sh | bash
+```
+
+---
+
+## 第二步：配置接入 Tokens
+
+安装完成后，执行引导配置：
+
+1. 在选项中选择 **Custom endpoint**（通常为选项 28）
+2. 填写以下信息：
+
+| 字段 | 填写内容 |
+|------|----------|
+| URL | `http://47.102.134.41:3000` |
+| API Key | `sk-...`（你的 Tokens 平台 API Key） |
+| 模型 ID | 如 `claude-opus-4-6` |
+
+---
+
+## 第三步：加载环境变量
+
+```bash
+cd ~
+source ~/.bashrc
+```
+
+---
+
+## 第四步：开始使用
+
+配置完成后，Hermes Agent 即可通过 Tokens 平台调用模型，运行时间越长，智能体能力越强。

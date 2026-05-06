@@ -1,49 +1,49 @@
-# Claude Desktop 配置 Tokens 教程（测试中）
+# Claude Desktop 配置 Tokens 教程
 
-⚠️ 重要前提（必须看）
-必须使用最新版 Claude Desktop：低版本可能没有开发者模式或第三方推理配置入口。
-建议先保持未登录状态：不需要先登录 Claude 官方账号。如果已经登录，建议先退出后再配置。
-必须使用支持 Anthropic-compatible 的第三方 API：单纯 OpenAI-compatible 的接口不一定能用。
-Gateway base URL 需要是 HTTPS 地址：并且对应服务需要支持 Anthropic Messages API，通常也就是能处理 /v1/messages 请求。
-本教程以 Windows 为例，截图也是 Windows 环境下的界面
+!!! warning "重要前提"
+    - 必须使用**最新版** Claude Desktop
+    - 建议**未登录**状态下配置（已登录请先退出）
+    - 需要支持 Anthropic-compatible 的 API（即支持 `/v1/messages` 请求）
+    - Gateway base URL 需为 **HTTPS 地址**
 
-## 步骤 1：打开 Claude Desktop 并启用开发者模式#
-1.打开 Claude Desktop，先不要登录官方账号。
-2.如果当前界面不好直接点菜单，可以按键盘 Tab 切到左上角菜单区域，再按回车打开菜单。
-3.在顶部菜单栏选择 Help（帮助） → Troubleshooting（疑难解答）。
-4.在弹出的子菜单里点击 Enable Developer Mode（启用开发者模式）
+> 本教程以 Windows 环境为例。
 
-启用成功后，顶部菜单栏会多出一个 Developer（开发者） 菜单
+---
 
-## 步骤 2：进入第三方 API 配置页面#
-1.点击新出现的 Developer 菜单。
-2.选择 Configure Third-Party Inference…（配置第三方推理…）。
+## 第一步：启用开发者模式
 
-## 步骤 3：填写 Base URL 和 API Key（最关键一步）#
-打开配置窗口后，按下面方式设置：
+1. 打开 Claude Desktop，**不要登录**官方账号
+2. 在顶部菜单栏选择 **Help（帮助）** → **Troubleshooting（疑难解答）**
+3. 点击 **Enable Developer Mode（启用开发者模式）**
 
-Use this configuration：打开开关，必须开启。
+启用成功后，顶部菜单栏会新增 **Developer（开发者）** 菜单。
 
-Gateway：选择 Anthropic-compatible。
+---
 
-Gateway base URL：[http://47.102.134.41:3000](http://47.102.134.41:3000)
+## 第二步：进入第三方 API 配置页面
 
-Gateway API key：粘贴你的 API Key，也就是控制台的令牌管理复制出来的那串密钥。
+1. 点击顶部 **Developer** 菜单
+2. 选择 **Configure Third-Party Inference…（配置第三方推理）**
 
-Gateway auth scheme：一般保持默认即可。
+---
 
-Gateway extra headers：一般不用填写。
+## 第三步：填写配置信息
 
-设置完后，点击右下角 Apply locally（本地应用）。
+在配置窗口中按如下填写：
 
-选择重新启动软件
+| 字段 | 填写内容 |
+|------|----------|
+| Use this configuration | **开启**（必须） |
+| Gateway | `Anthropic-compatible` |
+| Gateway base URL | `http://47.102.134.41:3000` |
+| Gateway API key | 你的 Tokens 平台 API Key（`sk-...`） |
+| Gateway auth scheme | 保持默认 |
+| Gateway extra headers | 留空 |
 
-选择第一个
+填写完成后，点击右下角 **Apply locally（本地应用）**，然后重启软件。
 
-选择模型
+---
 
-## 步骤 4：验证是否成功#
-配置完成后，Claude Desktop 可能会提示重启；如果没有提示，也建议手动完全退出后重新打开。
-重新打开后，进入 Cowork、Code 或 Projects 相关页面。
-输入一个简单问题测试。
-如果模型能正常响应，或者界面中显示的是你第三方 API 提供的模型，就说明配置成功
+## 第四步：选择模型并验证
+
+重启后，在界面中选择模型，输入一个简单问题测试。模型能正常响应即配置成功。

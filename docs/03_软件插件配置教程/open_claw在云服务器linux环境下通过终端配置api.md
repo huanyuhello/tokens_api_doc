@@ -1,26 +1,40 @@
-# open claw在云服务器linux环境下通过终端配置api
+# OpenClaw 在云服务器 Linux 环境下通过终端配置 API
 
-确保你已经安装了open claw
+---
 
-**1.执行引导（根据提示完成基础设置）**
+## 前置条件
 
-在终端输入
-`openclaw onboard --install-daemon`
+- 已安装 OpenClaw
+- 已在 [Tokens 平台](http://47.102.134.41:3000) 获取 API Key
 
-**2.选择 QuickStart**
+---
 
-**3.Model/auth povider 选择custom provider**
+## 配置步骤
 
-**4.API Base URL 填写**
+### 第一步：执行初始化引导
 
-**5.粘贴api**
+在终端输入：
 
-**6.后面全部选择跳过**
+```bash
+openclaw onboard --install-daemon
+```
 
-**7.关于在打开web ui 后 聊天提示上下文窗口太小问题**
+### 第二步：按提示完成配置
 
-点击**配置**选项点击**models**在下方选择RWA
+1. 选择 **Quick Start**
+2. **Model/auth provider** 选择 **Custom provider**
+3. **API Base URL** 填写：`http://47.102.134.41:3000`
+4. 粘贴你的 API Key
+5. 后续步骤全部选择**跳过（Skip）**
 
-将contextWindow和maxTokens调大一点
+### 第三步：调整上下文窗口（可选）
 
-**最后就可以成功运行open claw了**
+如果聊天时提示上下文窗口过小：
+
+1. 打开 Web UI 后，点击**配置选项** → **Models**
+2. 在下方选择 **RWA**
+3. 将 `contextWindow` 和 `maxTokens` 调大（如 `200000` 和 `8192`）
+
+### 第四步：验证
+
+配置完成后，OpenClaw 即可正常运行。

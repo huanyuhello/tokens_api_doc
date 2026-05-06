@@ -1,24 +1,32 @@
-# vscode接入Tokens教程
+# VS Code 接入 Tokens 教程
 
-前置条件：
+## 前置条件
 
-一个Tokens claudecode的令牌key [http://47.102.134.41:3000](http://47.102.134.41:3000)
+- 已在 [Tokens 平台](http://47.102.134.41:3000) 获取 API Key（令牌）
+- 已安装 [Node.js](https://nodejs.org/) 18 或更高版本
+- 已安装 [VS Code](https://code.visualstudio.com/)
 
-**安装 Claude Code：**
-要安装 Claude Code，请按以下两个流程进行:
-**1、本地安装（推荐）**
-**macOS, Linux, WSL，Windows PowerShell，Windows CMD:**
+---
 
-```
+## 第一步：安装 Claude Code
+
+```bash
 npm install -g @anthropic-ai/claude-code
 ```
-**2、配置本地的sttings.json或者环境变量（二选一如有配置请忽略）**
-`settings文件路径 C:\Users\用户名\.claude\settings.json`
 
-```
+---
+
+## 第二步：配置接入 Tokens
+
+修改 settings.json 文件：
+
+- **Windows**：`C:\Users\用户名\.claude\settings.json`
+- **macOS/Linux**：`~/.claude/settings.json`
+
+```json
 {
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "sk-hUOgVOGw0qdyk*****************",
+    "ANTHROPIC_AUTH_TOKEN": "sk-...",
     "ANTHROPIC_BASE_URL": "http://47.102.134.41:3000",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
@@ -29,20 +37,26 @@ npm install -g @anthropic-ai/claude-code
   "includeCoAuthoredBy": false
 }
 ```
-**3、测试使用cmd输入claude是否能正常对话**
 
-```
-注意！！！claude code会自动读取文件夹下的文件，建议一个空文件夹测试。防止消耗大量token
-```
+---
 
-**安装 VScode插件（Claude Code for VS Code）：**
+## 第三步：验证 Claude Code
 
-#### 1、打开VScode界面#
+打开新终端，输入 `claude` 回车，能正常对话即配置成功。
 
-#### 2、打开VScode的扩展#
+> **注意**：建议在空文件夹中测试，避免消耗大量 Token。
 
-#### 3、在扩展商城中搜索Claude，就会出现许多相关插件#
+---
 
-##### 在配置中添加以下代码：#
+## 第四步：安装 VS Code 插件
 
-#### 4、打开插件,按照上面流程配置好Claude即可使用#
+1. 打开 VS Code，进入扩展市场（`Ctrl+Shift+X`）
+2. 搜索 **Claude Code for VS Code**
+3. 点击安装，等待完成
+4. 重启 VS Code，左侧活动栏出现 Claude Code 图标即安装成功
+
+---
+
+## 第五步：使用
+
+插件会自动读取已配置的环境变量，点击左侧 Claude Code 图标即可开始使用。

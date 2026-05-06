@@ -1,32 +1,51 @@
-# gemini cli 配置教程
+# Gemini CLI 配置教程
 
-**前提条件**
+## 前置条件
 
-已安装 Node.js 18 或更高版本（可通过 node -v 查看当前版本）。
+- 已在 [Tokens 平台](http://47.102.134.41:3000) 获取 API Key（令牌）
+- 已安装 [Node.js](https://nodejs.org/) 18 或更高版本
 
-**使用全局安装的方法**
+---
 
-在“终端”里输入如下命令行，然后按回车键运行（使用 sudo 时会提示你输入当前用户的密码）：
+## 第一步：安装 Gemini CLI
 
-```
+```bash
 npm install -g @google/gemini-cli
+```
 
-// 或（适用于 Mac）
+macOS 如遇权限问题：
 
+```bash
 sudo npm install -g @google/gemini-cli
 ```
-**配置 cc switch**
-下载 cc switch
-地址`https://github.com/farion1231/cc-switch/releases/tag/v3.12.3`
-往下拉，找到适合自己系统的版本
 
-安装完成后
-打开cc switch 点击上方gemini图标
+---
 
-点击右上角的加号后
-选择自定义供应商
+## 第二步：通过 CC Switch 配置接入（推荐）
 
-完整配置如下
+CC Switch 可以方便地管理 Gemini CLI 的 API 配置。
 
-最后 打开终端
-输入`gemini` 就可以聊天了
+1. 下载安装 [CC Switch](https://github.com/farion1231/cc-switch/releases)
+2. 打开 CC Switch，点击顶部 **Gemini** 图标
+3. 点击右上角加号，选择**自定义供应商**
+4. 填写以下信息：
+
+| 字段 | 填写内容 |
+|------|----------|
+| API Base URL | `http://47.102.134.41:3000/v1` |
+| API Key | `sk-...`（你的 Tokens 平台 API Key） |
+| 模型名称 | 如 `gemini-2.5-pro-all` |
+
+5. 保存配置
+
+---
+
+## 第三步：开始使用
+
+打开终端，输入：
+
+```bash
+gemini
+```
+
+出现交互界面即配置成功。

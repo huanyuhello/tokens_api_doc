@@ -1,24 +1,32 @@
-# Cursor接入Tokens教程
+# Cursor 接入 Tokens 教程
 
-前置条件：
+## 前置条件
 
-一个Tokens claudecode的令牌key [http://47.102.134.41:3000](http://47.102.134.41:3000)
+- 已在 [Tokens 平台](http://47.102.134.41:3000) 获取 API Key（令牌）
+- 已安装 [Node.js](https://nodejs.org/) 18 或更高版本
+- 已安装 [Cursor](https://www.cursor.com/)
 
-**安装 Claude Code：**
-要安装 Claude Code，请按以下两个流程进行:
-**1、本地安装（推荐）**
-**macOS, Linux, WSL，Windows PowerShell，Windows CMD:**
+---
 
-```
+## 第一步：安装 Claude Code
+
+```bash
 npm install -g @anthropic-ai/claude-code
 ```
-**2、配置本地的sttings.json或者环境变量（二选一如有配置请忽略）**
-`settings文件路径 C:\Users\用户名\.claude\settings.json`
 
-```
+---
+
+## 第二步：配置 Claude Code 接入 Tokens
+
+修改 settings.json 文件：
+
+- **Windows**：`C:\Users\用户名\.claude\settings.json`
+- **macOS/Linux**：`~/.claude/settings.json`
+
+```json
 {
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "sk-hUOgVOGw0qdyk*****************",
+    "ANTHROPIC_AUTH_TOKEN": "sk-...",
     "ANTHROPIC_BASE_URL": "http://47.102.134.41:3000",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
@@ -30,12 +38,25 @@ npm install -g @anthropic-ai/claude-code
 }
 ```
 
-## 2.测试使用cmd输入claude是否能正常对话#
+---
 
-```
-注意！！！claude code会自动读取文件夹下的文件，建议一个空文件夹测试。防止消耗大量token
-```
+## 第三步：验证 Claude Code
 
-## 3.cursor安装插件#
+打开新终端，输入 `claude` 回车，能正常对话即配置成功。
 
-## 4.测试#
+> **注意**：建议在空文件夹中测试，避免 Claude Code 自动读取大量文件消耗 Token。
+
+---
+
+## 第四步：在 Cursor 中安装 Claude Code 插件
+
+1. 打开 Cursor，进入扩展市场（`Ctrl+Shift+X`）
+2. 搜索 **Claude Code**
+3. 点击安装，等待完成
+4. 重启 Cursor，左侧活动栏出现 Claude Code 图标即安装成功
+
+---
+
+## 第五步：在 Cursor 中使用
+
+安装插件后，Claude Code 会自动读取上面配置的环境变量，直接在 Cursor 中点击 Claude Code 图标即可开始使用。
