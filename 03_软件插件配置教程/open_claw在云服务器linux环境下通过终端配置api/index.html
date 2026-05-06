@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#open-clawlinuxapi" class="md-skip">
+        <a href="#openclaw-linux-api" class="md-skip">
           跳转至
         </a>
       
@@ -1557,6 +1557,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    open claw在云服务器linux环境下通过终端配置api
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1573,6 +1591,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配置步骤
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="配置步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：执行初始化引导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：按提示完成配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：调整上下文窗口（可选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5244,6 +5353,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配置步骤
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="配置步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：执行初始化引导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：按提示完成配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：调整上下文窗口（可选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5259,20 +5448,36 @@
 
 
 
-<h1 id="open-clawlinuxapi">open claw在云服务器linux环境下通过终端配置api<a class="headerlink" href="#open-clawlinuxapi" title="Permanent link">&para;</a></h1>
-<p>确保你已经安装了open claw</p>
-<p><strong>1.执行引导（根据提示完成基础设置）</strong></p>
-<p>在终端输入
-<code>openclaw onboard --install-daemon</code></p>
-<p><strong>2.选择 QuickStart</strong></p>
-<p><strong>3.Model/auth povider 选择custom provider</strong></p>
-<p><strong>4.API Base URL 填写</strong></p>
-<p><strong>5.粘贴api</strong></p>
-<p><strong>6.后面全部选择跳过</strong></p>
-<p><strong>7.关于在打开web ui 后 聊天提示上下文窗口太小问题</strong></p>
-<p>点击<strong>配置</strong>选项点击<strong>models</strong>在下方选择RWA</p>
-<p>将contextWindow和maxTokens调大一点</p>
-<p><strong>最后就可以成功运行open claw了</strong></p>
+<h1 id="openclaw-linux-api">OpenClaw 在云服务器 Linux 环境下通过终端配置 API<a class="headerlink" href="#openclaw-linux-api" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">前置条件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>已安装 OpenClaw</li>
+<li>已在 <a href="http://47.102.134.41:3000">Tokens 平台</a> 获取 API Key</li>
+</ul>
+<hr />
+<h2 id="_2">配置步骤<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">第一步：执行初始化引导<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>在终端输入：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>openclaw<span class="w"> </span>onboard<span class="w"> </span>--install-daemon
+</code></pre></div>
+<h3 id="_4">第二步：按提示完成配置<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>选择 <strong>Quick Start</strong></li>
+<li><strong>Model/auth provider</strong> 选择 <strong>Custom provider</strong></li>
+<li><strong>API Base URL</strong> 填写：<code>http://47.102.134.41:3000</code></li>
+<li>粘贴你的 API Key</li>
+<li>后续步骤全部选择<strong>跳过（Skip）</strong></li>
+</ol>
+<h3 id="_5">第三步：调整上下文窗口（可选）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>如果聊天时提示上下文窗口过小：</p>
+<ol>
+<li>打开 Web UI 后，点击<strong>配置选项</strong> → <strong>Models</strong></li>
+<li>在下方选择 <strong>RWA</strong></li>
+<li>将 <code>contextWindow</code> 和 <code>maxTokens</code> 调大（如 <code>200000</code> 和 <code>8192</code>）</li>
+</ol>
+<h3 id="_6">第四步：验证<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>配置完成后，OpenClaw 即可正常运行。</p>
 
 
 

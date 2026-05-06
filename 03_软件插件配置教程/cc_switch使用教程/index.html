@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#cc-switch" class="md-skip">
           跳转至
         </a>
       
@@ -1442,6 +1442,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1484,6 +1486,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1495,7 +1499,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        工具概述
+        工具简介
       
     </span>
   </a>
@@ -1503,10 +1507,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-ccs" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1、下载安装 CCS
+        第一步：下载安装
       
     </span>
   </a>
@@ -1514,30 +1518,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2ccs" class="md-nav__link">
+  <a href="#claude-code-tokens" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2、配置CCS
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2、配置CCS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-1-claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.1 配置样例1 （claude）
+        第二步：配置 Claude Code 接入 Tokens
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#gemini-cli-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：配置 Gemini CLI 接入 Tokens
+      
+    </span>
+  </a>
   
 </li>
       
@@ -5324,6 +5322,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5335,7 +5335,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        工具概述
+        工具简介
       
     </span>
   </a>
@@ -5343,10 +5343,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-ccs" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1、下载安装 CCS
+        第一步：下载安装
       
     </span>
   </a>
@@ -5354,30 +5354,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2ccs" class="md-nav__link">
+  <a href="#claude-code-tokens" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2、配置CCS
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2、配置CCS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-1-claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.1 配置样例1 （claude）
+        第二步：配置 Claude Code 接入 Tokens
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#gemini-cli-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：配置 Gemini CLI 接入 Tokens
+      
+    </span>
+  </a>
   
 </li>
       
@@ -5398,20 +5392,87 @@
 
 
 
-<h2 id="_1">工具概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CC Switch 是一个基于 Rust 和 Tauri 构建的轻量级（约 6MB）桌面应用，旨在解决频繁手动修改 CLI 配置文件、切换不同 API Key 或代理地址的痛点。
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>支持工具：Claude Code, Codex, Gemini CLI, OpenCode, OpenClaw 等。
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>支持系统：Windows 10+, macOS 12+, Linux (Ubuntu/Debian/Fedora)。
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>核心优势：一键切换配置、系统托盘快速操作、云同步、MCP 协议支持。
-</code></pre></div>
-<h1 id="1-ccs">1、下载安装 CCS<a class="headerlink" href="#1-ccs" title="Permanent link">&para;</a></h1>
-<p><strong>项目地址：</strong> <a href="https://github.com/farion1231/cc-switch">https://github.com/farion1231/cc-switch</a></p>
-<h1 id="2ccs">2、配置CCS<a class="headerlink" href="#2ccs" title="Permanent link">&para;</a></h1>
-<h2 id="21-1-claude">2.1 配置样例1 （claude）<a class="headerlink" href="#21-1-claude" title="Permanent link">&para;</a></h2>
-<p>点击保存</p>
+<h1 id="cc-switch">CC Switch 使用教程<a class="headerlink" href="#cc-switch" title="Permanent link">&para;</a></h1>
+<h2 id="_1">工具简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>CC Switch 是一个基于 Rust 和 Tauri 构建的轻量级桌面应用（约 6MB），用于一键切换 Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw 等 CLI 工具的 API 配置。</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>支持工具</td>
+<td>Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw 等</td>
+</tr>
+<tr>
+<td>支持系统</td>
+<td>Windows 10+、macOS 12+、Linux（Ubuntu/Debian/Fedora）</td>
+</tr>
+<tr>
+<td>核心功能</td>
+<td>一键切换配置、系统托盘快速操作、云同步、MCP 协议支持</td>
+</tr>
+</tbody>
+</table>
+<p>项目地址：<a href="https://github.com/farion1231/cc-switch">https://github.com/farion1231/cc-switch</a></p>
+<hr />
+<h2 id="_2">第一步：下载安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>前往 <a href="https://github.com/farion1231/cc-switch/releases">Releases 页面</a> 下载适合你系统的版本并安装。</p>
+<hr />
+<h2 id="claude-code-tokens">第二步：配置 Claude Code 接入 Tokens<a class="headerlink" href="#claude-code-tokens" title="Permanent link">&para;</a></h2>
+<p>打开 CC Switch，点击 Claude 图标，新建配置：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ANTHROPIC_AUTH_TOKEN</td>
+<td><code>sk-...</code>（你的 Tokens 平台 API Key）</td>
+</tr>
+<tr>
+<td>ANTHROPIC_BASE_URL</td>
+<td><code>http://47.102.134.41:3000</code></td>
+</tr>
+<tr>
+<td>ANTHROPIC_MODEL</td>
+<td><code>claude-opus-4-6</code></td>
+</tr>
+</tbody>
+</table>
+<p>填写完成后点击<strong>保存</strong>，一键切换即可生效。</p>
+<hr />
+<h2 id="gemini-cli-tokens">第三步：配置 Gemini CLI 接入 Tokens<a class="headerlink" href="#gemini-cli-tokens" title="Permanent link">&para;</a></h2>
+<p>点击顶部 Gemini 图标，点击右上角加号，选择<strong>自定义供应商</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API Base URL</td>
+<td><code>http://47.102.134.41:3000/v1</code></td>
+</tr>
+<tr>
+<td>API Key</td>
+<td><code>sk-...</code></td>
+</tr>
+<tr>
+<td>模型名称</td>
+<td>如 <code>gemini-2.5-pro-all</code></td>
+</tr>
+</tbody>
+</table>
+<p>保存后，打开终端输入 <code>gemini</code> 即可开始使用。</p>
 
 
 

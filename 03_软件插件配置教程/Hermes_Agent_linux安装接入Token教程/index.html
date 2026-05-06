@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1hermes-agent" class="md-skip">
+        <a href="#hermes-agent-linux-tokens" class="md-skip">
           跳转至
         </a>
       
@@ -1330,6 +1330,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1372,6 +1374,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1380,10 +1384,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1hermes-agent" class="md-nav__link">
+  <a href="#hermes-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1、什么是hermes agent
+        Hermes Agent 简介
       
     </span>
   </a>
@@ -1391,10 +1395,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2hermes-agent" class="md-nav__link">
+  <a href="#hermes-agent_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2、hermes agent快速上手
+        第一步：安装 Hermes Agent
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：配置接入 Tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：加载环境变量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：开始使用
       
     </span>
   </a>
@@ -5296,6 +5333,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5304,10 +5343,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1hermes-agent" class="md-nav__link">
+  <a href="#hermes-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1、什么是hermes agent
+        Hermes Agent 简介
       
     </span>
   </a>
@@ -5315,10 +5354,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2hermes-agent" class="md-nav__link">
+  <a href="#hermes-agent_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2、hermes agent快速上手
+        第一步：安装 Hermes Agent
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：配置接入 Tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：加载环境变量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：开始使用
       
     </span>
   </a>
@@ -5342,17 +5414,50 @@
 
 
 
-  <h1>Hermes Agent linux安装接入Token教程</h1>
-
-<h2 id="1hermes-agent">1、什么是hermes agent<a class="headerlink" href="#1hermes-agent" title="Permanent link">&para;</a></h2>
-<p><code>Hermes Agent 是 Nous Research 开发的开源自主 AI 智能体，于 2026 年 2 月发布。它不是绑定在 IDE 上的代码补全工具，也不是套壳聊天机器人——它住在你的服务器上，记住它学到的一切，运行越久能力越强。支持 Linux、macOS 和 WSL2，一条 curl 命令即可安装，无需任何前置依赖。</code></p>
-<h2 id="2hermes-agent">2、hermes agent快速上手<a class="headerlink" href="#2hermes-agent" title="Permanent link">&para;</a></h2>
-<p><code>linux 安装命令： curl -fsSL https://res1.hermesagent.org.cn/install.sh | bash</code></p>
-<p><strong>因为我此前已经配置过一个了，所以我选择了29，一般的是选择28 Custom endpoint。</strong></p>
-<p><strong>填入url key 模型id</strong></p>
-<p><code>在用户的根目录下
-root@Tokens:~/.hermes# cd 
-root@Tokens:~# source ~/.bashrc  //加载环境变量</code></p>
+<h1 id="hermes-agent-linux-tokens">Hermes Agent Linux 安装接入 Tokens 教程<a class="headerlink" href="#hermes-agent-linux-tokens" title="Permanent link">&para;</a></h1>
+<h2 id="hermes-agent">Hermes Agent 简介<a class="headerlink" href="#hermes-agent" title="Permanent link">&para;</a></h2>
+<p>Hermes Agent 是 Nous Research 开发的开源自主 AI 智能体，支持 Linux、macOS 和 WSL2，运行越久能力越强。一条命令即可安装，无需前置依赖。</p>
+<hr />
+<h2 id="hermes-agent_1">第一步：安装 Hermes Agent<a class="headerlink" href="#hermes-agent_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://res1.hermesagent.org.cn/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</code></pre></div>
+<hr />
+<h2 id="tokens">第二步：配置接入 Tokens<a class="headerlink" href="#tokens" title="Permanent link">&para;</a></h2>
+<p>安装完成后，执行引导配置：</p>
+<ol>
+<li>在选项中选择 <strong>Custom endpoint</strong>（通常为选项 28）</li>
+<li>填写以下信息：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URL</td>
+<td><code>http://47.102.134.41:3000</code></td>
+</tr>
+<tr>
+<td>API Key</td>
+<td><code>sk-...</code>（你的 Tokens 平台 API Key）</td>
+</tr>
+<tr>
+<td>模型 ID</td>
+<td>如 <code>claude-opus-4-6</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">第三步：加载环境变量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>~
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
+<hr />
+<h2 id="_2">第四步：开始使用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>配置完成后，Hermes Agent 即可通过 Tokens 平台调用模型，运行时间越长，智能体能力越强。</p>
 
 
 

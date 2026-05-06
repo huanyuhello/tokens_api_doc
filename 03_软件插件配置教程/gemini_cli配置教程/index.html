@@ -1501,6 +1501,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gemini cli配置教程
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1517,6 +1535,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gemini-cli_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：安装 Gemini CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cc-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：通过 CC Switch 配置接入（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：开始使用
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5244,6 +5325,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gemini-cli_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：安装 Gemini CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cc-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：通过 CC Switch 配置接入（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：开始使用
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5259,28 +5392,59 @@
 
 
 
-<h1 id="gemini-cli">gemini cli 配置教程<a class="headerlink" href="#gemini-cli" title="Permanent link">&para;</a></h1>
-<p><strong>前提条件</strong></p>
-<p>已安装 Node.js 18 或更高版本（可通过 node -v 查看当前版本）。</p>
-<p><strong>使用全局安装的方法</strong></p>
-<p>在“终端”里输入如下命令行，然后按回车键运行（使用 sudo 时会提示你输入当前用户的密码）：</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm install -g @google/gemini-cli
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>// 或（适用于 Mac）
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo npm install -g @google/gemini-cli
+<h1 id="gemini-cli">Gemini CLI 配置教程<a class="headerlink" href="#gemini-cli" title="Permanent link">&para;</a></h1>
+<h2 id="_1">前置条件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>已在 <a href="http://47.102.134.41:3000">Tokens 平台</a> 获取 API Key（令牌）</li>
+<li>已安装 <a href="https://nodejs.org/">Node.js</a> 18 或更高版本</li>
+</ul>
+<hr />
+<h2 id="gemini-cli_1">第一步：安装 Gemini CLI<a class="headerlink" href="#gemini-cli_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@google/gemini-cli
 </code></pre></div>
-<strong>配置 cc switch</strong>
-下载 cc switch
-地址<code>https://github.com/farion1231/cc-switch/releases/tag/v3.12.3</code>
-往下拉，找到适合自己系统的版本</p>
-<p>安装完成后
-打开cc switch 点击上方gemini图标</p>
-<p>点击右上角的加号后
-选择自定义供应商</p>
-<p>完整配置如下</p>
-<p>最后 打开终端
-输入<code>gemini</code> 就可以聊天了</p>
+<p>macOS 如遇权限问题：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@google/gemini-cli
+</code></pre></div>
+<hr />
+<h2 id="cc-switch">第二步：通过 CC Switch 配置接入（推荐）<a class="headerlink" href="#cc-switch" title="Permanent link">&para;</a></h2>
+<p>CC Switch 可以方便地管理 Gemini CLI 的 API 配置。</p>
+<ol>
+<li>下载安装 <a href="https://github.com/farion1231/cc-switch/releases">CC Switch</a></li>
+<li>打开 CC Switch，点击顶部 <strong>Gemini</strong> 图标</li>
+<li>点击右上角加号，选择<strong>自定义供应商</strong></li>
+<li>填写以下信息：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API Base URL</td>
+<td><code>http://47.102.134.41:3000/v1</code></td>
+</tr>
+<tr>
+<td>API Key</td>
+<td><code>sk-...</code>（你的 Tokens 平台 API Key）</td>
+</tr>
+<tr>
+<td>模型名称</td>
+<td>如 <code>gemini-2.5-pro-all</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>保存配置</li>
+</ol>
+<hr />
+<h2 id="_2">第三步：开始使用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>打开终端，输入：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>gemini
+</code></pre></div>
+<p>出现交互界面即配置成功。</p>
 
 
 

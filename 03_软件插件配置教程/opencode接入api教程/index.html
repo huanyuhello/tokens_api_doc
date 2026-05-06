@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#opencodeapi" class="md-skip">
+        <a href="#opencode-tokens" class="md-skip">
           跳转至
         </a>
       
@@ -1585,6 +1585,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    opencode接入api教程
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1601,6 +1619,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配置步骤
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="配置步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：打开设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：添加自定义提供商
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：选择模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5244,6 +5331,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配置步骤
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="配置步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：打开设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：添加自定义提供商
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：选择模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5259,12 +5404,48 @@
 
 
 
-<h1 id="opencodeapi">opencode接入api教程<a class="headerlink" href="#opencodeapi" title="Permanent link">&para;</a></h1>
-<p><strong>打开 opencode 点击设置然后点击提供商</strong></p>
-<p>选择自定义提供商，点击连接
-按照下面示例来配置（以配置claude为例）</p>
-<p>点击提交</p>
-<p>最后选择刚才的Tokens的模型就可以对话了</p>
+<h1 id="opencode-tokens">OpenCode 接入 Tokens 教程<a class="headerlink" href="#opencode-tokens" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">配置步骤<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">第一步：打开设置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>启动 OpenCode 后，点击<strong>设置</strong>图标。</p>
+<h3 id="_3">第二步：添加自定义提供商<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>点击<strong>提供商</strong></li>
+<li>选择<strong>自定义提供商</strong>，点击<strong>连接</strong></li>
+<li>按如下填写配置（以 Claude 为例）：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>名称</td>
+<td><code>Tokens</code>（自定义）</td>
+</tr>
+<tr>
+<td>API Base URL</td>
+<td><code>http://47.102.134.41:3000</code></td>
+</tr>
+<tr>
+<td>API Key</td>
+<td><code>sk-...</code>（你的 Tokens 平台 API Key）</td>
+</tr>
+<tr>
+<td>模型名称</td>
+<td>如 <code>claude-opus-4-6</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>点击<strong>提交</strong></li>
+</ol>
+<h3 id="_4">第三步：选择模型<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>在模型列表中选择刚才添加的 Tokens 提供商下的模型，即可开始对话。</p>
 
 
 

@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#claudecode" class="md-skip">
+        <a href="#claude-code-winmac" class="md-skip">
           跳转至
         </a>
       
@@ -1524,10 +1524,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#claude-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claude Code 为您做什么
+        第一步：安装 Claude Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：配置接入（二选一）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第二步：配置接入（二选一）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settingsjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法一：修改 settings.json（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法二：配置环境变量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：验证安装
       
     </span>
   </a>
@@ -1538,7 +1599,7 @@
   <a href="#claude-code_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么开发者喜欢 Claude Code
+        Claude Code 能做什么
       
     </span>
   </a>
@@ -5310,10 +5371,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#claude-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claude Code 为您做什么
+        第一步：安装 Claude Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：配置接入（二选一）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第二步：配置接入（二选一）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settingsjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法一：修改 settings.json（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法二：配置环境变量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：验证安装
       
     </span>
   </a>
@@ -5324,7 +5446,7 @@
   <a href="#claude-code_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么开发者喜欢 Claude Code
+        Claude Code 能做什么
       
     </span>
   </a>
@@ -5348,75 +5470,111 @@
 
 
 
-<h1 id="claudecode">claudecode安装<a class="headerlink" href="#claudecode" title="Permanent link">&para;</a></h1>
-<p>前置条件：</p>
-<p>一个Tokens claudecoded的 <a href="http://47.102.134.41:3000">密钥/令牌（key）</a></p>
-<p>已安装 Node.js</p>
-<p><strong>安装 Claude Code：</strong>
-要安装 Claude Code，请按以下两个流程进行:
-<strong>1、本地安装（推荐）</strong>
-<strong>macOS, Linux, WSL，Windows PowerShell，Windows CMD:</strong></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm install -g @anthropic-ai/claude-code
+<h1 id="claude-code-winmac">Claude Code 安装教程（Win/Mac）<a class="headerlink" href="#claude-code-winmac" title="Permanent link">&para;</a></h1>
+<h2 id="_1">前置条件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>已在 <a href="http://47.102.134.41:3000">Tokens 平台</a> 获取 API Key（令牌）</li>
+<li>已安装 <a href="https://nodejs.org/">Node.js</a> 18 或更高版本</li>
+</ul>
+<hr />
+<h2 id="claude-code">第一步：安装 Claude Code<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h2>
+<p>适用于 macOS、Linux、WSL、Windows PowerShell、Windows CMD：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
 </code></pre></div>
-<strong>2 配置claude code接入方法（二选一）</strong>
-<strong><em>2.1、配置settings文件（方法一）</em></strong></p>
-<p><code>settings文件路径 C:\Users\用户名\.claude\settings.json</code></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &quot;env&quot;: {
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;ANTHROPIC_AUTH_TOKEN&quot;: &quot;sk-hUOgVOGw0qdyk*****************&quot;,
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;ANTHROPIC_BASE_URL&quot;: &quot;http://47.102.134.41:3000&quot;,
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;ANTHROPIC_DEFAULT_HAIKU_MODEL&quot;: &quot;claude-opus-4-6&quot;,
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    &quot;ANTHROPIC_DEFAULT_OPUS_MODEL&quot;: &quot;claude-opus-4-6&quot;,
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    &quot;ANTHROPIC_DEFAULT_SONNET_MODEL&quot;: &quot;claude-opus-4-6&quot;,
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    &quot;ANTHROPIC_MODEL&quot;: &quot;claude-opus-4-6&quot;,
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    &quot;ANTHROPIC_REASONING_MODEL&quot;: &quot;claude-opus-4-6&quot;
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  },
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  &quot;includeCoAuthoredBy&quot;: false
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>}
+<hr />
+<h2 id="_2">第二步：配置接入（二选一）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="settingsjson">方法一：修改 settings.json（推荐）<a class="headerlink" href="#settingsjson" title="Permanent link">&para;</a></h3>
+<p>文件路径：</p>
+<ul>
+<li><strong>Windows</strong>：<code>C:\Users\用户名\.claude\settings.json</code></li>
+<li><strong>macOS/Linux</strong>：<code>~/.claude/settings.json</code></li>
+</ul>
+<p>写入以下内容（替换 <code>sk-...</code> 为你的 API Key）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_AUTH_TOKEN&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sk-...&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_BASE_URL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://47.102.134.41:3000&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_DEFAULT_HAIKU_MODEL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-opus-4-6&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_DEFAULT_OPUS_MODEL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-opus-4-6&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_DEFAULT_SONNET_MODEL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-opus-4-6&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_MODEL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-opus-4-6&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_REASONING_MODEL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-opus-4-6&quot;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="nt">&quot;includeCoAuthoredBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
 </code></pre></div>
-<strong><em>2.2、环境变量配置（方法二）</em></strong></p>
-<p>自定义api与key(win)自定义api与key(mac)方式一：使用命令行 (习惯命令行)
-Windows命令提示符（CMD）和PowerShell都可以做到，推荐使用 setx命令。setx用于永久性地设置环境变量。
-重要提示：setx会将变量写入注册表，它会影响未来打开的所有命令提示符窗口，但不会影响当前的窗口。因此，你需要操作之后重新打开一个新的终端窗口(win+R,输入cmd回车)：用 setx 进行永久设置 (相当于编辑 .bashrc)
-操作步骤 (在CMD中打开并执行):</p>
-<p>设置第一个变量</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>setx ANTHROPIC_AUTH_TOKEN &quot;sk-...&quot;
+<h3 id="_3">方法二：配置环境变量<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows（命令行）</label><label for="__tabbed_1_2">Windows（图形界面）</label><label for="__tabbed_1_3">macOS/Linux</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>setx ANTHROPIC_AUTH_TOKEN &quot;sk-...&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>setx ANTHROPIC_BASE_URL &quot;http://47.102.134.41:3000&quot;
 </code></pre></div>
-设置第二个变量</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>setx ANTHROPIC_BASE_URL &quot;http://47.102.134.41:3000&quot;
+<blockquote>
+<p>设置完成后需<strong>重新打开</strong>终端窗口才能生效。</p>
+</blockquote>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>按 <code>Win + R</code>，输入 <code>sysdm.cpl</code> 回车</li>
+<li>切换到「高级」选项卡，点击「环境变量」</li>
+<li>在「用户变量」中点击「新建」，依次添加：<ul>
+<li>变量名：<code>ANTHROPIC_AUTH_TOKEN</code>，变量值：<code>sk-...</code></li>
+<li>变量名：<code>ANTHROPIC_BASE_URL</code>，变量值：<code>http://47.102.134.41:3000</code></li>
+</ul>
+</li>
+<li>点击确定保存，重新打开终端</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>在 <code>~/.bashrc</code> 或 <code>~/.zshrc</code> 中添加：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_AUTH_TOKEN</span><span class="o">=</span><span class="s2">&quot;sk-...&quot;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">&quot;http://47.102.134.41:3000&quot;</span>
 </code></pre></div>
-<p>重要：设置完成后，你需要关闭所有已经打开的CMD或PowerShell窗口，然后重新打开一个新的窗口，这样新的环境变量才会生效。
-方式二：使用图形用户界面 (GUI) (推荐给所有Windows用户)
-这是最直观、最不容易出错的方法。</p>
-<p>打开“系统属性”按键盘上的 Windows 键 + R 键，打开“运行”对话框。输入 sysdm.cpl 然后按回车。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sysdm.cpl
+<p>然后执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc<span class="w">  </span><span class="c1"># 或 source ~/.zshrc</span>
 </code></pre></div>
-<p>进入“环境变量”设置在打开的“系统属性”窗口中，切换到“高级”选项卡。点击右下角的“环境变量...”按钮。</p>
-<p>添加新的用户变量在弹出的“环境变量”窗口中，上半部分是“（您的用户名） 的用户变量”。点击“新建(N)...”按钮。变量名(N): ANTHROPIC_AUTH_TOKEN变量值(V): sk-... (你的密钥)点击“确定”。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ANTHROPIC_AUTH_TOKEN
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sk-...
+</div>
+</div>
+</div>
+<hr />
+<h2 id="_4">第三步：验证安装<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>打开新终端，进入任意项目目录后运行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>your-project
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>claude
 </code></pre></div>
-<p>重复步骤3添加第二个变量再次点击“新建(N)...”。变量名(N): ANTHROPIC_BASE_URL变量值(V): <a href="http://47.102.134.41:3000点击“确定”。">http://47.102.134.41:3000点击“确定”。</a></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ANTHROPIC_BASE_URL
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>http://47.102.134.41:3000
-</code></pre></div>
-<p>保存并关闭在“环境变量”窗口点击“确定”。在“系统属性”窗口点击“确定”。
-重要：通过GUI设置完成后，你需要关闭所有已经打开的CMD或PowerShell窗口，然后重新打开一个新的窗口，这样新的环境变量才会生效。</p>
-<p><strong>开始使用 Claude Code：</strong></p>
-<p>cmdVScode打开一个新终端，输入Claude后回车。
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>cd your-project
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>claude
-</code></pre></div></p>
-<h2 id="claude-code">Claude Code 为您做什么<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h2>
-<p><strong>从描述构建功能</strong>：用纯英文告诉 Claude 您想构建什么。它将制定计划、编写代码并确保其正常工作。</p>
-<p><strong>调试和修复问题</strong>：描述一个错误或粘贴错误消息。Claude Code 将分析您的代码库、识别问题并实施修复。</p>
-<p><strong>导航任何代码库</strong>：询问有关您团队代码库的任何内容，并获得深思熟虑的答案。Claude Code 维护对整个项目结构的认识，可以从网络上查找最新信息，并且通过 <a href="/zh-CN/mcp">MCP</a> 可以从 Google Drive、Figma 和 Slack 等外部数据源提取数据。</p>
-<p><strong>自动化繁琐任务</strong>：修复棘手的 lint 问题、解决合并冲突和编写发行说明。从您的开发机器上用一个命令完成所有这些，或在 CI 中自动完成。</p>
-<h2 id="claude-code_1">为什么开发者喜欢 Claude Code<a class="headerlink" href="#claude-code_1" title="Permanent link">&para;</a></h2>
-<p><strong>在您的终端中工作</strong>：不是另一个聊天窗口。不是另一个 IDE。Claude Code 在您已经工作的地方与您相遇，使用您已经喜欢的工具。</p>
-<p><strong>采取行动</strong>：Claude Code 可以直接编辑文件、运行命令和创建提交。需要更多？<a href="/zh-CN/mcp">MCP</a> 让 Claude 读取您在 Google Drive 中的设计文档、更新您在 Jira 中的工单，或使用_您的_自定义开发者工具。</p>
-<p><strong>Unix 哲学</strong>：Claude Code 是可组合和可脚本化的。<code>tail -f app.log | claude -p "Slack me if you see any anomalies appear in this log stream"</code> <em>有效</em>。您的 CI 可以运行 <code>claude -p "If there are new text strings, translate them into French and raise a PR for @lang-fr-team to review"</code>。</p>
-<p><strong>企业就绪</strong>：使用 Claude API，或在 AWS 或 GCP 上托管。企业级<a href="/zh-CN/security">安全</a>、<a href="/zh-CN/data-usage">隐私</a>和<a href="https://trust.anthropic.com/">合规性</a>是内置的。</p>
+<p>出现交互界面即表示配置成功。</p>
+<blockquote>
+<p><strong>注意</strong>：Claude Code 会自动读取当前目录下的文件，建议先在空文件夹中测试，避免消耗大量 Token。</p>
+</blockquote>
+<hr />
+<h2 id="claude-code_1">Claude Code 能做什么<a class="headerlink" href="#claude-code_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>构建功能</td>
+<td>用自然语言描述需求，自动制定计划、编写代码</td>
+</tr>
+<tr>
+<td>调试修复</td>
+<td>粘贴报错信息，自动分析并修复问题</td>
+</tr>
+<tr>
+<td>代码导航</td>
+<td>询问任何关于代码库的问题，获得准确答案</td>
+</tr>
+<tr>
+<td>自动化任务</td>
+<td>修复 lint 问题、解决合并冲突、编写发布说明</td>
+</tr>
+</tbody>
+</table>
 
 
 
