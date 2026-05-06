@@ -1244,10 +1244,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-claude-desktop" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第一步：启用开发者模式
+        步骤 1：打开 Claude Desktop 并启用开发者模式
       
     </span>
   </a>
@@ -1255,10 +1255,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
+  <a href="#2-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第二步：进入第三方 API 配置页面
+        步骤 2：进入第三方 API 配置页面
       
     </span>
   </a>
@@ -1266,10 +1266,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#3-base-url-api-key" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第三步：填写配置信息
+        步骤 3：填写 Base URL 和 API Key（最关键一步）
       
     </span>
   </a>
@@ -1277,10 +1277,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第四步：选择模型并验证
+        步骤 4：验证是否成功
       
     </span>
   </a>
@@ -5332,10 +5332,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-claude-desktop" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第一步：启用开发者模式
+        步骤 1：打开 Claude Desktop 并启用开发者模式
       
     </span>
   </a>
@@ -5343,10 +5343,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
+  <a href="#2-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第二步：进入第三方 API 配置页面
+        步骤 2：进入第三方 API 配置页面
       
     </span>
   </a>
@@ -5354,10 +5354,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#3-base-url-api-key" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第三步：填写配置信息
+        步骤 3：填写 Base URL 和 API Key（最关键一步）
       
     </span>
   </a>
@@ -5365,10 +5365,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第四步：选择模型并验证
+        步骤 4：验证是否成功
       
     </span>
   </a>
@@ -5392,74 +5392,34 @@
 
 
 
-<h1 id="claude-desktop-tokens">Claude Desktop 配置 Tokens 教程<a class="headerlink" href="#claude-desktop-tokens" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">重要前提</p>
-<ul>
-<li>必须使用<strong>最新版</strong> Claude Desktop</li>
-<li>建议<strong>未登录</strong>状态下配置（已登录请先退出）</li>
-<li>需要支持 Anthropic-compatible 的 API（即支持 <code>/v1/messages</code> 请求）</li>
-<li>Gateway base URL 需为 <strong>HTTPS 地址</strong></li>
-</ul>
-</div>
-<blockquote>
-<p>本教程以 Windows 环境为例。</p>
-</blockquote>
-<hr />
-<h2 id="_1">第一步：启用开发者模式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ol>
-<li>打开 Claude Desktop，<strong>不要登录</strong>官方账号</li>
-<li>在顶部菜单栏选择 <strong>Help（帮助）</strong> → <strong>Troubleshooting（疑难解答）</strong></li>
-<li>点击 <strong>Enable Developer Mode（启用开发者模式）</strong></li>
-</ol>
-<p>启用成功后，顶部菜单栏会新增 <strong>Developer（开发者）</strong> 菜单。</p>
-<hr />
-<h2 id="api">第二步：进入第三方 API 配置页面<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
-<ol>
-<li>点击顶部 <strong>Developer</strong> 菜单</li>
-<li>选择 <strong>Configure Third-Party Inference…（配置第三方推理）</strong></li>
-</ol>
-<hr />
-<h2 id="_2">第三步：填写配置信息<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>在配置窗口中按如下填写：</p>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>填写内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Use this configuration</td>
-<td><strong>开启</strong>（必须）</td>
-</tr>
-<tr>
-<td>Gateway</td>
-<td><code>Anthropic-compatible</code></td>
-</tr>
-<tr>
-<td>Gateway base URL</td>
-<td><code>http://47.102.134.41:3000</code></td>
-</tr>
-<tr>
-<td>Gateway API key</td>
-<td>你的 Tokens 平台 API Key（<code>sk-...</code>）</td>
-</tr>
-<tr>
-<td>Gateway auth scheme</td>
-<td>保持默认</td>
-</tr>
-<tr>
-<td>Gateway extra headers</td>
-<td>留空</td>
-</tr>
-</tbody>
-</table>
-<p>填写完成后，点击右下角 <strong>Apply locally（本地应用）</strong>，然后重启软件。</p>
-<hr />
-<h2 id="_3">第四步：选择模型并验证<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>重启后，在界面中选择模型，输入一个简单问题测试。模型能正常响应即配置成功。</p>
+<h1 id="claude-desktop-tokens">Claude Desktop 配置 Tokens 教程（测试中）<a class="headerlink" href="#claude-desktop-tokens" title="Permanent link">&para;</a></h1>
+<p>⚠️ 重要前提（必须看）必须使用最新版 Claude Desktop：低版本可能没有开发者模式或第三方推理配置入口。建议先保持未登录状态：不需要先登录 Claude 官方账号。如果已经登录，建议先退出后再配置。必须使用支持 Anthropic-compatible 的第三方 API：单纯 OpenAI-compatible 的接口不一定能用。Gateway base URL 需要是 HTTPS 地址：并且对应服务需要支持 Anthropic Messages API，通常也就是能处理 /v1/messages 请求。本教程以 Windows 为例，截图也是 Windows 环境下的界面</p>
+<h2 id="1-claude-desktop">步骤 1：打开 Claude Desktop 并启用开发者模式<a class="headerlink" href="#1-claude-desktop" title="Permanent link">&para;</a></h2>
+<p>1.打开 Claude Desktop，先不要登录官方账号。2.如果当前界面不好直接点菜单，可以按键盘 Tab 切到左上角菜单区域，再按回车打开菜单。3.在顶部菜单栏选择 Help（帮助） → Troubleshooting（疑难解答）。4.在弹出的子菜单里点击 Enable Developer Mode（启用开发者模式）</p>
+<p><img alt="image.png" src="../../resource/647839.png" /></p>
+<p><img alt="image.png" src="../../resource/647869.png" />
+启用成功后，顶部菜单栏会多出一个 Developer（开发者） 菜单</p>
+<h2 id="2-api">步骤 2：进入第三方 API 配置页面<a class="headerlink" href="#2-api" title="Permanent link">&para;</a></h2>
+<p>1.点击新出现的 Developer 菜单。2.选择 Configure Third-Party Inference…（配置第三方推理…）。</p>
+<p><img alt="image.png" src="../../resource/647841.png" /></p>
+<h2 id="3-base-url-api-key">步骤 3：填写 Base URL 和 API Key（最关键一步）<a class="headerlink" href="#3-base-url-api-key" title="Permanent link">&para;</a></h2>
+<p>打开配置窗口后，按下面方式设置：
+Use this configuration：打开开关，必须开启。
+Gateway：选择 Anthropic-compatible。
+Gateway base URL：<a href="http://47.102.134.41:3000">http://47.102.134.41:3000</a>
+Gateway API key：粘贴你的 API Key，也就是控制台的令牌管理复制出来的那串密钥。
+Gateway auth scheme：一般保持默认即可。
+Gateway extra headers：一般不用填写。
+设置完后，点击右下角 Apply locally（本地应用）。</p>
+<p><img alt="image.png" src="../../resource/647871.png" /></p>
+<p>选择重新启动软件
+选择第一个
+<img alt="image.png" src="../../resource/647878.png" /></p>
+<p>选择模型</p>
+<p><img alt="image.png" src="../../resource/647880.png" /></p>
+<h2 id="4">步骤 4：验证是否成功<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>配置完成后，Claude Desktop 可能会提示重启；如果没有提示，也建议手动完全退出后重新打开。重新打开后，进入 Cowork、Code 或 Projects 相关页面。输入一个简单问题测试。如果模型能正常响应，或者界面中显示的是你第三方 API 提供的模型，就说明配置成功</p>
+<p><img alt="image.png" src="../../resource/647886.png" /></p>
 
 
 

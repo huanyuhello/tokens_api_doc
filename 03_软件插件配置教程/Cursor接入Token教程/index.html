@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cursor-tokens" class="md-skip">
+        <a href="#cursor4sapi" class="md-skip">
           跳转至
         </a>
       
@@ -1300,10 +1300,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#2cmdclaude" class="md-nav__link">
     <span class="md-ellipsis">
       
-        前置条件
+        2.测试使用cmd输入claude是否能正常对话
       
     </span>
   </a>
@@ -1311,10 +1311,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#claude-code" class="md-nav__link">
+  <a href="#3cursor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第一步：安装 Claude Code
+        3.cursor安装插件
       
     </span>
   </a>
@@ -1322,43 +1322,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#claude-code-tokens" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第二步：配置 Claude Code 接入 Tokens
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#claude-code_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第三步：验证 Claude Code
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cursor-claude-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第四步：在 Cursor 中安装 Claude Code 插件
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cursor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第五步：在 Cursor 中使用
+        4.测试
       
     </span>
   </a>
@@ -5354,10 +5321,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#2cmdclaude" class="md-nav__link">
     <span class="md-ellipsis">
       
-        前置条件
+        2.测试使用cmd输入claude是否能正常对话
       
     </span>
   </a>
@@ -5365,10 +5332,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#claude-code" class="md-nav__link">
+  <a href="#3cursor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第一步：安装 Claude Code
+        3.cursor安装插件
       
     </span>
   </a>
@@ -5376,43 +5343,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#claude-code-tokens" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第二步：配置 Claude Code 接入 Tokens
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#claude-code_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第三步：验证 Claude Code
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cursor-claude-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第四步：在 Cursor 中安装 Claude Code 插件
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cursor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第五步：在 Cursor 中使用
+        4.测试
       
     </span>
   </a>
@@ -5436,27 +5370,16 @@
 
 
 
-<h1 id="cursor-tokens">Cursor 接入 Tokens 教程<a class="headerlink" href="#cursor-tokens" title="Permanent link">&para;</a></h1>
-<h2 id="_1">前置条件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li>已在 <a href="http://47.102.134.41:3000">Tokens 平台</a> 获取 API Key（令牌）</li>
-<li>已安装 <a href="https://nodejs.org/">Node.js</a> 18 或更高版本</li>
-<li>已安装 <a href="https://www.cursor.com/">Cursor</a></li>
-</ul>
-<hr />
-<h2 id="claude-code">第一步：安装 Claude Code<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h2>
+<h1 id="cursor4sapi">Cursor接入4sapi教程<a class="headerlink" href="#cursor4sapi" title="Permanent link">&para;</a></h1>
+<p>前置条件：
+一个4sapi claudecode的令牌key<a href="http://47.102.134.41:3000">http://47.102.134.41:3000</a>
+<strong>安装 Claude Code：</strong>要安装 Claude Code，请按以下两个流程进行:<strong>1、本地安装（推荐）</strong><strong>macOS, Linux, WSL，Windows PowerShell，Windows CMD:</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
 </code></pre></div>
-<hr />
-<h2 id="claude-code-tokens">第二步：配置 Claude Code 接入 Tokens<a class="headerlink" href="#claude-code-tokens" title="Permanent link">&para;</a></h2>
-<p>修改 settings.json 文件：</p>
-<ul>
-<li><strong>Windows</strong>：<code>C:\Users\用户名\.claude\settings.json</code></li>
-<li><strong>macOS/Linux</strong>：<code>~/.claude/settings.json</code></li>
-</ul>
+<p><strong>2、配置本地的sttings.json或者环境变量（二选一如有配置请忽略）</strong><code>settings文件路径 C:\Users\用户名\.claude\settings.json</code></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_AUTH_TOKEN&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sk-...&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_AUTH_TOKEN&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sk-hUOgVOGw0qdyk*****************&quot;</span><span class="p">,</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_BASE_URL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://47.102.134.41:3000&quot;</span><span class="p">,</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_DEFAULT_HAIKU_MODEL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-opus-4-6&quot;</span><span class="p">,</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">&quot;ANTHROPIC_DEFAULT_OPUS_MODEL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-opus-4-6&quot;</span><span class="p">,</span>
@@ -5467,23 +5390,15 @@
 <a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="nt">&quot;includeCoAuthoredBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
 </code></pre></div>
-<hr />
-<h2 id="claude-code_1">第三步：验证 Claude Code<a class="headerlink" href="#claude-code_1" title="Permanent link">&para;</a></h2>
-<p>打开新终端，输入 <code>claude</code> 回车，能正常对话即配置成功。</p>
-<blockquote>
-<p><strong>注意</strong>：建议在空文件夹中测试，避免 Claude Code 自动读取大量文件消耗 Token。</p>
-</blockquote>
-<hr />
-<h2 id="cursor-claude-code">第四步：在 Cursor 中安装 Claude Code 插件<a class="headerlink" href="#cursor-claude-code" title="Permanent link">&para;</a></h2>
-<ol>
-<li>打开 Cursor，进入扩展市场（<code>Ctrl+Shift+X</code>）</li>
-<li>搜索 <strong>Claude Code</strong></li>
-<li>点击安装，等待完成</li>
-<li>重启 Cursor，左侧活动栏出现 Claude Code 图标即安装成功</li>
-</ol>
-<hr />
-<h2 id="cursor">第五步：在 Cursor 中使用<a class="headerlink" href="#cursor" title="Permanent link">&para;</a></h2>
-<p>安装插件后，Claude Code 会自动读取上面配置的环境变量，直接在 Cursor 中点击 Claude Code 图标即可开始使用。</p>
+<h2 id="2cmdclaude">2.测试使用cmd输入claude是否能正常对话<a class="headerlink" href="#2cmdclaude" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">注意</span><span class="err">！！！</span><span class="nx">claude</span><span class="w"> </span><span class="nx">code会自动读取文件夹下的文件</span><span class="err">，</span><span class="nx">建议一个空文件夹测试</span><span class="err">。</span><span class="nx">防止消耗大量token</span>
+</code></pre></div>
+<p><img alt="image.png" src="../../resource/637437.png" /></p>
+<h2 id="3cursor">3.cursor安装插件<a class="headerlink" href="#3cursor" title="Permanent link">&para;</a></h2>
+<p><img alt="image.png" src="../../resource/637441.png" /></p>
+<p><img alt="image.png" src="../../resource/637444.png" /></p>
+<h2 id="4">4.测试<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p><img alt="image.png" src="../../resource/637447.png" /></p>
 
 
 

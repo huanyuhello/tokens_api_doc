@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#trae-tokens" class="md-skip">
+        <a href="#trae-api" class="md-skip">
           跳转至
         </a>
       
@@ -1440,63 +1440,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#trae" class="md-nav__link">
+  <a href="#trae-api_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Trae 简介
+        二、Trae 配置第三方 API
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配置步骤
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="配置步骤">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第一步：安装 Cline 插件
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第二步：配置 API 信息
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第三步：开始使用
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5349,63 +5299,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#trae" class="md-nav__link">
+  <a href="#trae-api_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Trae 简介
+        二、Trae 配置第三方 API
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配置步骤
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="配置步骤">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第一步：安装 Cline 插件
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第二步：配置 API 信息
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        第三步：开始使用
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5426,53 +5326,31 @@
 
 
 
-<h1 id="trae-tokens">Trae 配置使用 Tokens 教程<a class="headerlink" href="#trae-tokens" title="Permanent link">&para;</a></h1>
-<h2 id="trae">Trae 简介<a class="headerlink" href="#trae" title="Permanent link">&para;</a></h2>
-<p>Trae 是一款基于 VS Code 构建的 AI 驱动 IDE，界面与 VS Code 高度一致，兼容 VS Code 插件生态。</p>
-<p>官方下载：<a href="https://www.trae.cn/">https://www.trae.cn/</a></p>
-<hr />
-<h2 id="_1">配置步骤<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="cline">第一步：安装 Cline 插件<a class="headerlink" href="#cline" title="Permanent link">&para;</a></h3>
-<ol>
-<li>打开 Trae，进入插件市场（<code>Ctrl+Shift+X</code>）</li>
-<li>搜索 <strong>Cline</strong></li>
-<li>点击安装，等待完成</li>
-<li>左侧活动栏出现 Cline 图标即安装成功</li>
-</ol>
-<h3 id="api">第二步：配置 API 信息<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
-<p>点击左侧活动栏的 Cline 图标，在设置界面填写：</p>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>填写内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>API Provider</td>
-<td>OpenAI Compatible</td>
-</tr>
-<tr>
-<td>Base URL</td>
-<td><code>http://47.102.134.41:3000/v1</code></td>
-</tr>
-<tr>
-<td>API Key</td>
-<td><code>sk-...</code>（你的 Tokens 平台令牌密钥）</td>
-</tr>
-<tr>
-<td>Model ID</td>
-<td>模型名称，如 <code>gpt-5.2</code>（从 Tokens 平台模型广场复制）</td>
-</tr>
-</tbody>
-</table>
-<p>填写完成后保存。</p>
-<blockquote>
-<p><strong>注意</strong>：模型名称必须与 Tokens 平台模型广场中的名称完全一致。</p>
-</blockquote>
-<h3 id="_2">第三步：开始使用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>配置完成后，在 Trae 中点击 Cline 图标即可开始 AI 辅助编程。</p>
+<h1 id="trae-api">Trae 配置使用 API 教程<a class="headerlink" href="#trae-api" title="Permanent link">&para;</a></h1>
+<p><strong>Trae</strong>是一款强大的、由 AI 驱动的集成开发环境 (IDE)，它基于 VS Code 构建，如果你用过 VS Code，会对 Trae 的界面感到非常熟悉。
+本教程主要通过安装并配置<strong>Trae</strong>中的 Cline 插件，以接入 Tokens 平台提供的 API。
+<strong>Trae</strong>官方下载地址：<a href="https://www.trae.cn/">https://www.trae.cn/</a>
+由于<strong>Trae</strong>兼容 VS Code 插件，我们可以直接在<strong>Trae</strong>的插件市场中进行安装。
+1.
+打开插件市场，搜索 Cline
+2.
+点击 “安装”</p>
+<p><img alt="image-20260323115258129.png" src="../../resource/635527.png" /></p>
+<p>3.
+等待安装完成，左侧活动栏看到 Cline 图标
+如下图所示：</p>
+<p><img alt="image-20260323115708898.png" src="../../resource/635529.png" /></p>
+<h2 id="trae-api_1">二、Trae 配置第三方 API<a class="headerlink" href="#trae-api_1" title="Permanent link">&para;</a></h2>
+<p>1.
+点击<strong>Trae</strong>左侧活动栏的<strong>Cline</strong>图标，在其设置界面中填写配置信息，如下图所示。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Base URL：http://47.102.134.41:3000/v1 
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>API Key：sk-xxx（你的 Tokens 平台令牌密钥）
+</code></pre></div>
+<p>2.
+在 Model ID 中，可以选择或输入希望使用的模型名称，例如 gpt-5.2，然后保存完成。
+注意
+选择或输入的模型名称必须与平台模型广场中的模型名称保持一致，可以直接复制黏贴过来。</p>
+<p><img alt="image-20260323115418418.png" src="../../resource/635533.png" /></p>
 
 
 
