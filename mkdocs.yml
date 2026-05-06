@@ -93,6 +93,7 @@ nav:
   - 接入chatbox: 03_软件插件配置教程/接入chatbox.md
   - 腾讯云openclaw接入Token教程: 03_软件插件配置教程/腾讯云openclaw接入Token教程.md
 - 模型接口:
+  - 模型接口: 04_模型接口/index.md
   - Anthropic OpenAI 兼容接口:
     - 文本生成: 04_模型接口/Anthropic_OpenAI兼容接口/01_文本生成.md
     - 图片理解: 04_模型接口/Anthropic_OpenAI兼容接口/02_图片理解.md
