@@ -1,7 +1,7 @@
 # Cursor配置使用教程
 
 前置条件：
-一个4sapi claudecode的令牌key[http://47.102.134.41:3000](http://47.102.134.41:3000)
+claudecode的令牌key[http://47.102.134.41:3000](http://47.102.134.41:3000)
 **安装 Claude Code：**要安装 Claude Code，请按以下两个流程进行:**1、本地安装（推荐）****macOS, Linux, WSL，Windows PowerShell，Windows CMD:**
 
 ```bash
