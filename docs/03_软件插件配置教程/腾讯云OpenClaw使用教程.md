@@ -1,6 +1,6 @@
-# 腾讯云openclaw接入4sapi教程
+# 腾讯云openclaw接入教程
 
-腾讯云openclaw接入4sapi配置qq机器人
+腾讯云openclaw接入tokens配置qq机器人
 
 ## 1.配置模型#
 

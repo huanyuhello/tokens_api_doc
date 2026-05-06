@@ -1,4 +1,4 @@
-# Cursor接入4sapi教程
+# Cursor配置使用教程
 
 前置条件：
 一个4sapi claudecode的令牌key[http://47.102.134.41:3000](http://47.102.134.41:3000)

@@ -1,4 +1,4 @@
-# openclaw接入4sapi 模型配置教程
+# openclaw配置使用教程
 
 
 ## cpenclaw的API配置（claude）#

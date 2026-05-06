@@ -1,4 +1,4 @@
-# 4sapi接入chatbox
+# chatbox接入教程
 
 打开[https://chatboxai.app](https://chatboxai.app)
 

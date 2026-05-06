@@ -1,9 +1,11 @@
-# claudecode安装教程（win/mac)
+# claude code安装教程 (win/mac)
 
 
 前置条件：
-一个4sapi claudecoded的[密钥/令牌（key）](http://47.102.134.41:3000)已安装 Node.js
-**安装 Claude Code：**要安装 Claude Code，请按以下两个流程进行:**1、本地安装（推荐）****macOS, Linux, WSL，Windows PowerShell，Windows CMD:**
+一个Tokens claude code 的[密钥/令牌（key）](http://47.102.134.41:3000)已安装 Node.js
+**安装 Claude Code：**要安装 Claude Code，请按以下两个流程进行:
+
+**1、本地安装（推荐）****macOS, Linux, WSL，Windows PowerShell，Windows CMD:**
 
 ```bash
 npm install -g @anthropic-ai/claude-code
@@ -28,7 +30,9 @@ npm install -g @anthropic-ai/claude-code
 ```
 
 *2.2、环境变量配置（方法二）*
-自定义api与key(win)自定义api与key(mac)方式一：使用命令行 (习惯命令行)Windows命令提示符（CMD）和PowerShell都可以做到，推荐使用 setx命令。setx用于永久性地设置环境变量。重要提示：setx会将变量写入注册表，它会影响未来打开的所有命令提示符窗口，但不会影响当前的窗口。因此，你需要操作之后重新打开一个新的终端窗口(win+R,输入cmd回车)：用 setx 进行永久设置 (相当于编辑 .bashrc)操作步骤 (在CMD中打开并执行):设置第一个变量
+自定义api与key(win)自定义api与key(mac)
+
+方式一：使用命令行 (习惯命令行) Windows命令提示符（CMD）和PowerShell都可以做到，推荐使用 setx命令。setx用于永久性地设置环境变量。重要提示：setx会将变量写入注册表，它会影响未来打开的所有命令提示符窗口，但不会影响当前的窗口。因此，你需要操作之后重新打开一个新的终端窗口(win+R,输入cmd回车)：用 setx 进行永久设置 (相当于编辑 .bashrc)操作步骤 (在CMD中打开并执行):设置第一个变量
 ```bash
 setx ANTHROPIC_AUTH_TOKEN "sk-..."
 ```
@@ -38,7 +42,9 @@ setx ANTHROPIC_BASE_URL "http://47.102.134.41:3000"
 ```
 
 ![图片1.png](../resource/615267.png)
-重要：设置完成后，你需要关闭所有已经打开的CMD或PowerShell窗口，然后重新打开一个新的窗口，这样新的环境变量才会生效。方式二：使用图形用户界面 (GUI) (推荐给所有Windows用户)这是最直观、最不容易出错的方法。打开“系统属性”按键盘上的 Windows 键 + R 键，打开“运行”对话框。输入 sysdm.cpl 然后按回车。
+重要：设置完成后，你需要关闭所有已经打开的CMD或PowerShell窗口，然后重新打开一个新的窗口，这样新的环境变量才会生效。
+
+方式二：使用图形用户界面 (GUI) (推荐给所有Windows用户)这是最直观、最不容易出错的方法。打开“系统属性”按键盘上的 Windows 键 + R 键，打开“运行”对话框。输入 sysdm.cpl 然后按回车。
 ```bash
 sysdm.cpl
 ```

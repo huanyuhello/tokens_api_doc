@@ -1,4 +1,4 @@
-# Dify 配置使用 Tokens 教程
+# Dify 配置使用教程
 
 
 ## 1.Dify 基本介绍#

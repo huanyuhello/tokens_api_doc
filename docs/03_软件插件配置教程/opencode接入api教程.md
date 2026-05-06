@@ -1,4 +1,4 @@
-# opencode接入api教程
+# opencode 配置使用教程
 
 **打开 opencode 点击设置然后点击提供商**
 ![image.png](../resource/637310.png)

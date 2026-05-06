@@ -1,4 +1,4 @@
-# Claude Desktop 配置 Tokens 教程（测试中）
+# Claude Desktop 配置使用教程
 
 ⚠️ 重要前提（必须看）必须使用最新版 Claude Desktop：低版本可能没有开发者模式或第三方推理配置入口。建议先保持未登录状态：不需要先登录 Claude 官方账号。如果已经登录，建议先退出后再配置。必须使用支持 Anthropic-compatible 的第三方 API：单纯 OpenAI-compatible 的接口不一定能用。Gateway base URL 需要是 HTTPS 地址：并且对应服务需要支持 Anthropic Messages API，通常也就是能处理 /v1/messages 请求。本教程以 Windows 为例，截图也是 Windows 环境下的界面
 

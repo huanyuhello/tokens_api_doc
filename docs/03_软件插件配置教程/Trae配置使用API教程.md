@@ -1,4 +1,4 @@
-# Trae 配置使用 API 教程
+# Trae 配置使用教程
 
 **Trae**是一款强大的、由 AI 驱动的集成开发环境 (IDE)，它基于 VS Code 构建，如果你用过 VS Code，会对 Trae 的界面感到非常熟悉。
 本教程主要通过安装并配置**Trae**中的 Cline 插件，以接入 Tokens 平台提供的 API。

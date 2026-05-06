@@ -1,4 +1,4 @@
-# 4sapi接入Cherry Studio
+# Cherry Studio接入教程
 
 打开官方链接[https://www.cherry-ai.com/](https://www.cherry-ai.com/)
 

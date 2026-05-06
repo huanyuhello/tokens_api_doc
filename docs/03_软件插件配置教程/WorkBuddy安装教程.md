@@ -1,4 +1,4 @@
-# WorkBuddy 接入4sapi教程
+# WorkBuddy 配置使用教程
 
 
 本教程在windows环境下配置，以下截图也是windows为例
