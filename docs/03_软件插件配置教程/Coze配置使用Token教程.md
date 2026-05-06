@@ -1,50 +1,27 @@
 # Coze 配置使用 Tokens 教程
 
----
+**一.创建新项目**
 
-## 配置步骤
+![image.png](../resource/631938.png)
 
-### 第一步：创建新项目
+**二.创建新的工作流**
 
-登录 [Coze](https://www.coze.cn/) 后，点击**创建新项目**。
+![image.png](../resource/631941.png)
 
-### 第二步：创建工作流
 
-在项目中点击**创建新的工作流**。
+![image.png](../resource/631942.png)
 
-### 第三步：添加 HTTP 请求节点
+**三.添加 HTTP 请求节点**
 
-在工作流编辑器中，添加 **HTTP 请求**节点。
+![image.png](../resource/631945.png)
 
-### 第四步：填写请求配置
 
-按如下信息填写 HTTP 请求节点：
+![image.png](../resource/631946.png)
 
-**请求地址：**
-```
-http://47.102.134.41:3000/v1/chat/completions
-```
+**四.coze填写内容**
 
-**请求方式：** `POST`
+![image.png](../resource/631963.png)
 
-**Header：**
-```json
-{
-  "Authorization": "Bearer sk-...",
-  "Content-Type": "application/json"
-}
-```
+**五.点击运行节点**
 
-**Body：**
-```json
-{
-  "model": "claude-opus-4-6",
-  "messages": [
-    { "role": "user", "content": "你好" }
-  ]
-}
-```
-
-### 第五步：运行测试
-
-点击**运行节点**，右侧输出正常响应即配置成功。
+![image.png](../resource/631964.png)

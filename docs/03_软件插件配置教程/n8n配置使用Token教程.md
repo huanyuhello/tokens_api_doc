@@ -1,83 +1,78 @@
-# n8n 配置使用 Tokens 教程
+# n8n配置使用4sapi教程
 
----
+**一.添加账户凭证**1.在n8n中点击overview，再点击Credential
 
-## 方式一：通过 OpenAI 凭证接入
+![image.png](../resource/631735.png)
 
-### 第一步：添加账户凭证
+2.在弹出的窗口中选择OpenAi
 
-1. 在 n8n 中点击 **Overview** → **Credentials**
-2. 在弹出窗口中选择 **OpenAI**
-3. 填写以下信息：
-    - **API Key**：你在 Tokens 平台创建的令牌 Key
-    - **Base URL**：`http://47.102.134.41:3000/v1`
-4. 点击保存，出现绿色成功提示即配置完成
+![image.png](../resource/631737.png)
 
----
+3.在弹出的界面中填入下面信息
 
-## 方式二：通过 HTTP Request 节点接入
+![image.png](../resource/631740.png)
 
-### 文本对话工作流
+4.点击保存后出现以下信息则成功
 
-1. 创建工作流，添加**手动触发**节点
-2. 添加 **HTTP Request** 节点，按如下配置：
+![image.png](../resource/631741.png)
 
-**请求地址：**
-```
-http://47.102.134.41:3000/v1/chat/completions
-```
+**二.n8n 工作流配置第三方 API**通过http request添加：1.创建工作流
 
-**请求方式：** `POST`
+![image.png](../resource/631744.png)
 
-**Header（JSON 格式）：**
-```json
-{
-  "Authorization": "Bearer sk-...",
-  "Content-Type": "application/json"
-}
-```
+2.选择手动触发
 
-**Body（JSON 格式）：**
-```json
-{
-  "model": "gemini-2.5-pro-all",
-  "messages": [
-    { "role": "system", "content": "你是一个AI助理" },
-    { "role": "user", "content": "你好" }
-  ]
-}
-```
+![image.png](../resource/631747.png)
 
-3. 点击顶部 **Execute step** 测试，右侧 OUTPUT 正常输出即成功
+3.添加下一个 n8n 工作流模块，选择 HTTP Request 节点
 
----
+![image.png](../resource/631748.png)
 
-### 图片生成工作流
+4.按照下图信息填写
+都使用json格式
 
-1. 添加 **HTTP Request** 节点，按如下配置：
+![image.png](../resource/631753.png)
 
-**请求地址：**
-```
-http://47.102.134.41:3000/v1/images/generations
-```
+`{
+"Authorization": "Bearer  API Key",
+"Content-Type": "application/json"
+}`
 
-**Header（JSON 格式）：**
-```json
-{
-  "Authorization": "Bearer sk-...",
-  "Content-Type": "application/json"
-}
-```
+![image.png](../resource/631754.png)
 
-**Body（JSON 格式）：**
-```json
-{
-  "model": "gpt-image-1",
-  "prompt": "a white siamese cat",
-  "n": 1,
-  "size": "1024x1024"
-}
-```
+`{
+"model": "gemini-2.5-pro-all",
+"messages": [
+{ "role": "system", "content": "你是一个AI助理" },
+{ "role": "user", "content": "你好" }
+]
+}`
+5.点击顶部的 Execute step 进行测试，如果右边 OUTPUT 正常输出内容了，说明 n8n 节点配置成功执行了
+**三.n8n 生图工作流节点配置**1.添加 HTTP Request 节点来配置第三方 API
 
-2. 点击右上角测试，输出图片 URL 即成功
-3. 可通过在线 Base64 转码工具将结果转为图片预览
+![image.png](../resource/631765.png)
+
+2.按照下图填入信息
+
+![image.png](../resource/631771.png)
+
+`{
+"Authorization": "sk-",
+"Content-Type": "application/json"
+}`
+
+![image.png](../resource/631769.png)
+
+`{
+    "model": "gpt-image-1",
+    "prompt": "a white siamese cat",
+    "n": 1,
+    "size": "1024x1024"
+}`
+3.点击右上角测试，输出成果就可以了
+
+![image.png](../resource/631772.png)
+
+4.输出可以通过在线转码转成图片
+
+![image.png](../resource/631773.png)
