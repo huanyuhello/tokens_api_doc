@@ -1701,7 +1701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03_%E8%BD%AF%E4%BB%B6%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/OpenCode%E6%8E%A5%E5%85%A5api%E6%95%99%E7%A8%8B/" class="md-nav__link">
+      <a href="../../../03_软件插件配置教程/OpenCode接入api教程.md" class="md-nav__link">
         
   
   
@@ -5691,7 +5691,7 @@
 <p>start_timestampinteger 开始时间戳（秒）可选end_timestampinteger 结束时间戳（秒）可选token_namestring 按令牌名称过滤可选model_namestring 按模型名称过滤可选groupstring 按分组过滤可选request_idstring 按请求 ID 过滤可选Header 参数生成代码Authorizationstring 必需示例:user-tokenNew-Api-Userstring 必需示例:user-id</p>
 <h2 id="_1">返回响应<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>🟢200成功application/json生成代码Body生成代码dataobject 必需pageinteger 必需page_sizeinteger 必需totalinteger 必需itemsarray [object] 必需messagestring 必需successboolean 必需请求示例请求示例ShellJavaScriptJavacURLcURL-WindowsHttpiewgetPowerShell
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request GET &#39;http://47.102.134.41:3000/api/log/self?page=1&amp;page_size=&amp;type=&amp;start_timestamp=&amp;end_timestamp=&amp;token_name=&amp;model_name=&amp;group=&amp;request_id=&#39; \
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request GET &#39;https://tokens.smartfashionai.cn//api/log/self?page=1&amp;page_size=&amp;type=&amp;start_timestamp=&amp;end_timestamp=&amp;token_name=&amp;model_name=&amp;group=&amp;request_id=&#39; \
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;Authorization: user-token&#39; \
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;New-Api-User: user-id&#39;
 </code></pre></div>
