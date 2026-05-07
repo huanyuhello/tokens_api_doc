@@ -9,14 +9,14 @@ theme:
   language: zh
   palette:
     - scheme: default
-      primary: deep purple
-      accent: deep purple
+      primary: black
+      accent: grey
       toggle:
         icon: material/brightness-7
         name: 切换到深色模式
     - scheme: slate
-      primary: deep purple
-      accent: deep purple
+      primary: black
+      accent: grey
       toggle:
         icon: material/brightness-4
         name: 切换到浅色模式
