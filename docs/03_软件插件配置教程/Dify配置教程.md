@@ -22,7 +22,7 @@
 n1n 平台接口地址：
 
 ```
-API endpoint URL：http://47.102.134.41:3000 或者 http://47.102.134.41:3000/v1
+API endpoint URL：https://tokens.smartfashionai.cn/ 或者 https://tokens.smartfashionai.cn//v1
 ```
 
 示例如下所示：

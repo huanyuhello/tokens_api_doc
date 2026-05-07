@@ -2,7 +2,7 @@
 
 
 前置条件：
-一个Tokens claude code 的[密钥/令牌（key）](http://47.102.134.41:3000)已安装 Node.js
+一个Tokens claude code 的[密钥/令牌（key）](https://tokens.smartfashionai.cn/)已安装 Node.js
 **安装 Claude Code：**要安装 Claude Code，请按以下两个流程进行:
 
 **1、本地安装（推荐）****macOS, Linux, WSL，Windows PowerShell，Windows CMD:**
@@ -18,7 +18,7 @@ npm install -g @anthropic-ai/claude-code
 {
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "sk-hUOgVOGw0qdyk*****************",
-    "ANTHROPIC_BASE_URL": "http://47.102.134.41:3000",
+    "ANTHROPIC_BASE_URL": "https://tokens.smartfashionai.cn/",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-opus-4-6",
@@ -38,7 +38,7 @@ setx ANTHROPIC_AUTH_TOKEN "sk-..."
 ```
 设置第二个变量
 ```bash
-setx ANTHROPIC_BASE_URL "http://47.102.134.41:3000"
+setx ANTHROPIC_BASE_URL "https://tokens.smartfashionai.cn/"
 ```
 
 ![图片1.png](../resource/615267.png)
@@ -61,10 +61,10 @@ sk-...
 ![image.png](../resource/617960.png)
 
 ![image.png](../resource/617980.png)
-重复步骤3添加第二个变量再次点击“新建(N)...”。变量名(N): ANTHROPIC_BASE_URL变量值(V):[http://47.102.134.41:3000点击“确定”。](http://47.102.134.41:3000点击“确定”。)
+重复步骤3添加第二个变量再次点击“新建(N)...”。变量名(N): ANTHROPIC_BASE_URL变量值(V):[https://tokens.smartfashionai.cn/点击“确定”。](https://tokens.smartfashionai.cn/点击“确定”。)
 ```bash
 ANTHROPIC_BASE_URL
-http://47.102.134.41:3000
+https://tokens.smartfashionai.cn/
 ```
 
 ![image.png](../resource/615276.png)

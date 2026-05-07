@@ -1,7 +1,7 @@
 # vscode配置使用教程
 
 前置条件：
-一个4sapi claudecode的令牌key[http://47.102.134.41:3000](http://47.102.134.41:3000)
+一个4sapi claudecode的令牌key[https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)
 **安装 Claude Code：**要安装 Claude Code，请按以下两个流程进行:**1、本地安装（推荐）****macOS, Linux, WSL，Windows PowerShell，Windows CMD:**
 
 ```bash
@@ -14,7 +14,7 @@ npm install -g @anthropic-ai/claude-code
 {
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "sk-hUOgVOGw0qdyk*****************",
-    "ANTHROPIC_BASE_URL": "http://47.102.134.41:3000",
+    "ANTHROPIC_BASE_URL": "https://tokens.smartfashionai.cn/",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-opus-4-6",

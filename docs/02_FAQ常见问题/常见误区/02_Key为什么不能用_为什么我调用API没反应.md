@@ -2,6 +2,6 @@
 
 大部分情况是 Base URL（接口地址）设置不正确造成的，请分别尝试以下接口地址：
 
-1.[http://47.102.134.41:3000](http://47.102.134.41:3000)
+1.[https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)
 
-2.[http://47.102.134.41:3000/v1](http://47.102.134.41:3000/v1)
+2.[https://tokens.smartfashionai.cn//v1](https://tokens.smartfashionai.cn//v1)

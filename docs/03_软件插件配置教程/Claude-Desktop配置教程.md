@@ -24,7 +24,7 @@
 打开配置窗口后，按下面方式设置：
 Use this configuration：打开开关，必须开启。
 Gateway：选择 Anthropic-compatible。
-Gateway base URL：[http://47.102.134.41:3000](http://47.102.134.41:3000)
+Gateway base URL：[https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)
 Gateway API key：粘贴你的 API Key，也就是控制台的令牌管理复制出来的那串密钥。
 Gateway auth scheme：一般保持默认即可。
 Gateway extra headers：一般不用填写。

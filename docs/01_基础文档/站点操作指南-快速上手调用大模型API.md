@@ -1,6 +1,6 @@
 # 站点操作指南-快速上手调用大模型API
 
-api站：[http://47.102.134.41:3000](http://47.102.134.41:3000)
+api站：[https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)
 
 🎁 新用户必看文档。
 
@@ -9,9 +9,9 @@ api站：[http://47.102.134.41:3000](http://47.102.134.41:3000)
 调用API流程：
 注册用户--充值余额--创建令牌--选择需要调用大模型相对应的分组--令牌额度/期限设置--完成创建
 API=URL+令牌
-调用配置：URL:[http://47.102.134.41:3000](http://47.102.134.41:3000)   秘钥：SK-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+调用配置：URL:[https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)   秘钥：SK-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-(根据调用的模型查看技术文档[http://47.102.134.41:3000，确定是否需要加v1等](http://47.102.134.41:3000，确定是否需要加v1等))
+(根据调用的模型查看技术文档[https://tokens.smartfashionai.cn/，确定是否需要加v1等](https://tokens.smartfashionai.cn/，确定是否需要加v1等))
 配置模型：在模型广场选择对应模型名称，需要复制，不要打错模型名字，必须一致
 例如：claude-sonnet-4-5-20250929
 
@@ -39,23 +39,23 @@ e. 点击模型名字可查看该模型的详细信息
 
 4.使用方法
 
-使用时，把之前步骤生成的key放在http请求的头部(Header)进行鉴权，并根据不同模型不同接口的格式向指定接口地址([http://47.102.134.41:3000)发送请求。](http://47.102.134.41:3000)发送请求。)
+使用时，把之前步骤生成的key放在http请求的头部(Header)进行鉴权，并根据不同模型不同接口的格式向指定接口地址([https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)发送请求。)
 
-具体不同模型的请求方法可参考 [http://47.102.134.41:3000](http://47.102.134.41:3000)
+具体不同模型的请求方法可参考 [https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)
 
 5）替换 API 地址
 
 如果你是开发者，请参考 OpenAI 官方文档
 
-开发时，将文档中的 [https://api.openai.com/](https://api.openai.com/) 替换为[http://47.102.134.41:3000](http://47.102.134.41:3000)  即可
+开发时，将文档中的 [https://api.openai.com/](https://api.openai.com/) 替换为[https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)  即可
 
 Claude 模型也支持原生 v1/messages 接口，详情请参考 Claude 原生接口调用
 
 提示： 在一些第三方软件或平台输入自定义 URL 时，可能需要追加 /v1 或 /v1/chat/completions。具体URL可从模型广场页面点击模型查看该模型对应的api端点
 
-如：[http://47.102.134.41:3000](http://47.102.134.41:3000)
-[http://47.102.134.41:3000/v1](http://47.102.134.41:3000/v1)   （最常见）
-[http://47.102.134.41:3000/v1/chat/completions](http://47.102.134.41:3000/v1/chat/completions)
+如：[https://tokens.smartfashionai.cn/](https://tokens.smartfashionai.cn/)
+[https://tokens.smartfashionai.cn//v1](https://tokens.smartfashionai.cn//v1)   （最常见）
+[https://tokens.smartfashionai.cn//v1/chat/completions](https://tokens.smartfashionai.cn//v1/chat/completions)
 
 联系方式
 

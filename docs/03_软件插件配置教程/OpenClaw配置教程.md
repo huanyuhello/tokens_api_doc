@@ -8,7 +8,7 @@
 "models": {
     "providers": {
       "custom-1": {
-        "baseUrl": "http://47.102.134.41:3000",
+        "baseUrl": "https://tokens.smartfashionai.cn/",
         "apiKey": "你自己的KEY",
         "api": "anthropic-messages",
         "models": [
@@ -45,7 +45,7 @@
 `"models": {
     "providers": {
       "custom-2": {
-        "baseUrl": "http://47.102.134.41:3000",
+        "baseUrl": "https://tokens.smartfashionai.cn/",
         "apiKey": "你自己的KEY",
         "api": "anthropic-messages",
         "models": [
@@ -76,7 +76,7 @@
 "models": {
     "providers": {
       "custom-3": {
-        "baseUrl": "http://47.102.134.41:3000",
+        "baseUrl": "https://tokens.smartfashionai.cn/",
         "apiKey": "你自己的KEY",
         "api": "anthropic-messages",
         "models": [

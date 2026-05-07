@@ -24,7 +24,7 @@
 点击**Trae**左侧活动栏的**Cline**图标，在其设置界面中填写配置信息，如下图所示。
 
 ```
-Base URL：http://47.102.134.41:3000/v1 
+Base URL：https://tokens.smartfashionai.cn//v1 
 API Key：sk-xxx（你的 Tokens 平台令牌密钥）
 ```
 
