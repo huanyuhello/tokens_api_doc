@@ -20,17 +20,25 @@ theme:
       toggle:
         icon: material/brightness-4
         name: 切换到浅色模式
+  font:
+    text: false
+    code: false
   features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
     - search.highlight
     - search.suggest
     - content.code.copy
+    - toc.follow
   icon:
     repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search:
