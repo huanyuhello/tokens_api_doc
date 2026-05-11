@@ -9,30 +9,33 @@
 /* ===== 全局排版 ===== */
 .md-typeset {
   font-size: 0.85rem;
-  line-height: 1.8;
+  line-height: 1.25;
   letter-spacing: 0.01em;
 }
 
 .md-typeset h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-bottom: 0.6em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   border-bottom: 2px solid var(--md-default-fg-color--lightest);
-  padding-bottom: 0.4em;
+  padding-bottom: 0.3em;
 }
 
 .md-typeset h2 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin-top: 1.8em;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
   letter-spacing: -0.01em;
 }
 
 .md-typeset h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  margin-top: 1.4em;
+  margin-top: 0.9em;
+  margin-bottom: 0.2em;
 }
 
 /* ===== 导航栏 ===== */
@@ -85,7 +88,7 @@
 
 .md-typeset pre > code {
   font-size: 0.8rem;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 /* ===== 表格 ===== */
@@ -100,16 +103,27 @@
   font-size: 0.75rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 0.6em 1em;
+  padding: 0.4em 0.8em;
 }
 
 .md-typeset table:not([class]) td {
-  padding: 0.55em 1em;
+  padding: 0.35em 0.8em;
 }
 
 /* ===== 段落间距 ===== */
 .md-typeset p {
-  margin: 0.7em 0;
+  margin: 0.4em 0;
+}
+
+/* ===== 列表间距 ===== */
+.md-typeset ul,
+.md-typeset ol {
+  margin: 0.3em 0;
+  padding-left: 1.4em;
+}
+
+.md-typeset li {
+  margin: 0.15em 0;
 }
 
 /* ===== 图片 ===== */
@@ -117,7 +131,7 @@
   border-radius: 6px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   max-width: 100%;
-  margin: 0.8em 0;
+  margin: 0.4em 0;
 }
 
 /* ===== 深色模式微调 ===== */
