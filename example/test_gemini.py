@@ -239,20 +239,7 @@ def run_tests(api_key: str):
 
 
 if __name__ == "__main__":
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("--api-key", required=True)
-    # args = parser.parse_args()
-    # run_tests(args.api_key)
-    import google.genai as genai
-
-    client = genai.Client(
-        api_key="sk-V3vvVHEdPWsPFwGIa3Fn58FNfAFStJhp0ahYUdrFEZmNyMMi",
-        http_options={"base_url": "https://tokens.smartfashionai.cn"},
-    )
-
-    response = client.models.generate_content(
-        model="gemini-3.1-pro-preview",
-        contents="用一句话介绍你自己",
-    )
-
-    print(response.text)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--api-key", required=True)
+    args = parser.parse_args()
+    run_tests(args.api_key)
